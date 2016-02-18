@@ -1,0 +1,25 @@
+{{each foods as item index}}
+<div class="d-inner">
+    <i class="m-icon i-close"></i>
+    <div class="img-container">
+        <img src="{{=item.img}}" alt="" />
+    </div>
+    <div class="f-info" data-fid="{{=item.id}}">
+        <div class="f-dibar">
+            <div class="price"><b>￥</b><em>{{=item.price}}</em></div>
+            <div class="f-numb">
+                <a class="m-icon i-minus"></a>
+                <em>{{=item.num}}</em>
+                <a class="m-icon i-plus"></a>
+            </div>
+        </div>
+        <div class="f-intro">
+            <i class="m-icon i-back"></i>
+            <h5>{{=item.supplierdishname}}</h5>
+            <div class="f-des">
+                <p>{{=item.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

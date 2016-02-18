@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <title>表单验证</title>
+    <meta charset="utf-8" /></head>
+    <style>
+    #abc{background: red; width:50px; }
+    .blue{color:blue;}
+    .red{background:red;}
+    #form1 div{margin:10px;}
+    </style>
+<body>
+
+    <div id="form1">
+        <legend>表单1</legend>
+        <form data-role="form1" action="" method="">
+            <div>
+                <label>用户名</label>
+                <input type="text" placeholder="用户名" data-role="name" data-default-value="s"/>
+            </div>
+            <div>
+                <label>手机号</label>
+                <input type="text" placeholder="手机号" data-role="mobile"/>
+            </div>
+            <div>
+                <label>邮箱</label>
+                <input type="text" placeholder="邮箱" />
+            </div>
+            <div>
+                <label>性别</label>
+                <input type="checkbox" />12123 <input type="checkbox" />11
+                <input type="hidden" data-role='checkbox'>
+            </div>
+            <div>
+                <label>性别</label>
+                <input type="radio" />男 <input type="radio" />女
+            </div>
+            <div>
+                <label>密码</label>
+                <input type="password" placeholder="密码" />
+            </div>
+            <div>
+                <label>确认密码</label>
+                <input type="password" placeholder="确认密码" />
+            </div>
+            <div>
+                <label for="aaa">身份</label>
+                <select name="" id="" data-role="selector">
+                    <option value="default">Default</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                <input type="hidden" name="s" data-role="select">
+            </div>
+            <div>
+                <label for="aaa">上传文件</label>
+                <input type="file"/>
+                <input type="hidden" name="s" data-role="file">
+            </div>
+            <div>
+                <label>验证码</label>
+                <input type="text" placeholder="验证码" /><img alt="" src="http://resources.yunmall.dev/img/temp/code-85x36.jpg">
+                <a href="" title="" class="vertical-text">换一张</a>
+            </div>
+            <div><button type="submit" data-role="register">注册</button><button  data-role="register">重置</button></div>
+        </form>
+    </div>
+
+    <div id="form2" data-role="form2">
+         <legend>表单2</legend>
+       <form data-role="form2x" method="POST">
+       <input  data-role="dem"/></form>
+       <button data-role="tijiao">提交</button>
+    </div>
+    <iframe src="#" id="pop" name="pop"></iframe>
+</body>
+<script src="//r.xgimg.net/js/moui/1.0.5/mo.js?combine=true&debug=true&amp;mv=1.0.5&amp;v=788989"></script>
+
+
+<script>
+    Mo.require('formvalidate-plugin', function(M){
+
+        var FORM = M.role('form1');
+        var cfg = {
+            action:{
+                type: 'ajax',
+                url: 'http://',
+                tipType: 'tl', //提示对齐方式，如果没有即为遮罩式提示
+                data: {
+                    //带入提交的key-value
+                },
+                tipCloseFn: function(){
+                    //关闭提示窗后的回调
+                },
+                start: function(){
+                    //提交开始
+                },
+                success: function(){
+                    //成功回调
+                },
+                failure: function(){
+                    //提交失败
+                }
+
+            },
+            submit: 'register',
+            items: [{
+                role: 'name',
+                isBlur: false,
+                //tip: '用户名中英文2~20个字符',
+                rules: [
+                    [2,11,'cn','长度应为3~10'],
+                    [/^\d{6,10}/g, '格式不对'],
+                    [function(a){
+                        return true;
+                    }, 'tip4']
+                ],
+                io: {
+                    url: 'test.json'
+                }
+            },{
+                role: 'mobile',
+                isBlur: true,
+                tip: '手机号如135、138开头',
+                rules: [
+                    ['手机号码不能为空'],
+                    [2,10,'en','长度有问题'],
+                    [/^\d{2,10}/g, '格式校验问题'],
+                    [function(){
+                        return true
+                    }, '回调问题']
+                ]
+            },{
+                role: 'select',
+                type: 'hidden',
+                rules: [[function(){
+                        return arguments[1].get('value').length > 0 ? true : false;
+                    },'请选择身份']
+                ],
+                roles: 'selector',
+                bind: function (els, hideInput, tip) {
+                    //arguments:接受参数当前roles的Nodelist、用于存储变量的隐藏Input节点、提示
+                    var args = arguments;
+                    //debugger;
+                    args[0].on('change', function (argument) {
+                        args[1].set('value',1);
+                        if(!args[2].get('hidden')){
+                            args[2].hide();
+                        }
+                    });
+                }
+            },{
+                role: 'checkbox',
+                type: 'hidden',
+                rules: [[function(){
+                        return true
+                    },'性别必填']
+                ]
+            }],
+            tipSkin: 'skin1'
+
+        }
+        FORM.plug(M.Plugin.FormValidate, cfg);
+
+        M.role('form2').plug(M.Plugin.FormValidate, {
+            action:{
+                type: 'ajax',
+                url: 'http://xxbaidu.com',
+                role: 'form2x',
+                submit: function(formNode){
+                    //提交执行的回调，如果存在，必须手动使用formNode.submit();
+                    M.log(arguments);
+                    //debugger;
+                    M.later(2000, null, function(){
+                        formNode.submit()
+                    });
+                } //_blank,
+            },
+            items: [{
+                role: 'dem',
+                name: 'demm',
+                rules: [
+                    ['不能为空哟']
+                ]
+            }],
+            submit: 'tijiao'
+        })
+
+    })
+</script>
+</html>

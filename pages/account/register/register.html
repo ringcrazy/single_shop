@@ -1,0 +1,67 @@
+<module:layout/ets-wap>
+    <def:content>
+    <header>
+    <section class="main-bg">
+        <a id="btnGoBack" class="back_go m-bx m-bx-c-m">
+            <i class="icon icon-arrow-left"></i>
+        </a>
+        <div>注册</div>
+    </section>
+</header>
+
+<section class="content ffbg select-radio">
+    <ul class="menucontent border-bottom border-top">
+        <li class="ordercontent" id="addressManage">
+            <p class="m-bx m-bx-m pdy11">
+                <input type="tel" placeholder="输入手机号" class="m-fx-1 block pdl_5 tel-number" id="telephone" maxlength="11">
+                <input type="button" value="发送验证码" class="yzm aux-bg block" disabled="disabled" style="visibility: visible;">
+            </p>
+        </li>
+        <li class="ordercontent">
+            <p class="m-bx m-bx-m pdy19">
+                <input type="tel" placeholder="输入验证码" class="m-fx-1 block pdl_5" id="code" maxlength="6">
+                <span class="sbdyzm" tel="">收不到验证码？</span>
+            </p>
+        </li>
+        <li class="ordercontent borderbnone">
+            <p class="m-bx m-bx-m pdy19">
+                <input type="password" placeholder="输入密码" class="m-fx-1 block pdl_5" id="password" maxlength="50">
+            </p>
+        </li>
+    </ul>
+</section>
+
+<div class="button-box m-bx-ver pdb10">
+    <input type="button" value="注 册"  id="submitRegister" class="jinyong">
+</div>
+
+<div id="popup"></div>
+<div id="login" style="display: none">
+    <div class="pdx5">
+        <div class="m-bx m-bx-m">
+            <input type="tel" placeholder="请输入您的注册手机号" class="m-fx-1 block texbox" value="" maxlength="11">
+        </div>
+        <div class="ft-hui ft12 textcenter pdt10">我们会致电该手机号,告知验证码</div>
+    </div>
+</div>
+
+
+
+
+    
+    <nav class="nav"  id="bottomMeun">
+    <a id="btnGoHome" class="index  m-bx m-bx-ver m-bx-c-m m-fx-1">
+        <i class="home-page"></i>
+        <div>首页</div>
+    </a>
+    <a href="/User/MyOrder" class="order m-bx m-bx-ver m-bx-c-m m-fx-1">
+        <i class="order"></i>
+        <div>订单</div>
+    </a>
+    <a href="/User" class="my on m-bx m-bx-ver m-bx-c-m m-fx-1">
+        <i class="user"></i>
+        <div>我的</div>
+    </a>
+</nav>
+	</def>
+</module>

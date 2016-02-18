@@ -1,0 +1,30 @@
+<module:layout/normal>
+	<def:content>
+    <module:adr-bar />
+    <section class="map-box">
+        <div class="map" id="map"></div>
+        <div class="map-locator-box">
+            <div class="locator">
+                <i class="m-icon i-locate-manual"></i>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-init">
+            <!--<span>自动定位失败，在地图上长按选择地址</span>-->
+            <span>正在定位中，请稍候...</span>
+        </div>
+        <div class="footer-active  d-none">
+            <div class="address-text">
+                <span>正在定位</span>
+            </div>
+            <div class="btn-confirm">
+                <span>确定</span>
+            </div>
+        </div>
+    </footer>
+    </def>
+    <def:pagejs>
+            <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&amp;ak=286c3ec71cae58cacfa75d49145ff545"></script>
+            </def>
+    </module>

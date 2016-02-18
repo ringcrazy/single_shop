@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <title>MoUI - Overlay</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://r.xgimg.net/~?f=lib/container/demo" />
+    </head>
+    <style>
+
+    </style>
+
+<body>
+<div class="textlimit" data-role="aaa"><textarea></textarea></div>
+
+
+<div class="textlimit"><textarea></textarea></div>
+
+
+</body>
+<script src="//r.xgimg.net/js/moui/1.0.5/mo.js?combine=true&debug=true&amp;mv=1.0.5&amp;v=788989"></script>
+
+<script>
+    Mo.require('textlimit-plugin', function(M){
+
+       var list=[];
+       var cfg = {
+       /*defaultContent:"你妹",
+       callback:function(o){
+         M.log("当前长度："+o.currentLength+"    最大长度："+o.maxLength)
+       }*/
+        };
+    var sw = M.all("textarea").each(function(o){
+             list.push(o.plug([{
+                            fn:M.Plugin.TextLimit, cfg:cfg
+                        }
+                    ]));
+                /*o.textlimit.on("textareachange",function(o){
+                             M.log("当前长度："+o.currentLength+"    最大长度："+o.maxLength)
+
+                      })*/
+
+    })
+
+
+
+    setTimeout(function(){
+      list[0].textlimit.setValue("332232bbb3232");//设置值
+      list[0].textlimit.appendValue("332232bbb3232");//追加值
+    },5000)
+
+    });
+</script>
+</html>

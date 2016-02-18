@@ -1,0 +1,1107 @@
+/*ets_wap_b*/
+
+header section>.headright>div {
+    color: #ffd0c8
+}
+
+.pop-discount {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: none;
+    z-index: 20
+}
+
+.pop-discount section ul {
+    overflow-y: scroll;
+    border-top: 1px solid #ebebeb
+}
+
+.pop-discount section ul li {
+    background: #fff;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ebebeb
+}
+
+.pop-discount section ul li.no-coupon {
+    margin-bottom: 10px
+}
+
+.pop-discount section ul li section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center
+}
+
+.pop-discount section ul li section>div {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    color: #666;
+    font-size: 13px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center
+}
+
+.pop-discount section ul li section>div p {
+    font-size: 15px;
+    max-width: 66%;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all
+}
+
+.pop-discount section ul li section>div i.stock-mony {
+    display: inline-block;
+    min-width: 48px;
+    color: #fff;
+    height: 20px;
+    padding: 0 3px;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 5px;
+    width: 68px;
+    font-size: 13px;
+    background: url(../../img/icoye-lf.png) left 0 no-repeat, url(../../img/icoye-rt.png) right 0 no-repeat
+}
+
+.pop-discount section ul li section>i:nth-of-type(1) {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    line-height: 12px;
+    color: #fff;
+    font-size: 9px;
+    border-radius: 2px;
+    display: block;
+    font-style: normal;
+    margin-right: 5px
+}
+
+.pop-discount section ul li section>i:nth-of-type(1) .pop-discount section ul li section>i:nth-of-type(1).foldico {
+    background-color: #a8a3f1
+}
+
+.pop-discount section ul li section>i:nth-of-type(1).ticketIco {
+    background-color: #6babb7
+}
+
+.pop-discount section ul li section>i:nth-of-type(1).none {
+    visibility: hidden
+}
+
+.pop-discount section ul li section>i:nth-of-type(2) {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    border: 2px solid #e7604a;
+    box-sizing: border-box;
+    -webkit-transform: scaleX(0.8) scaleY(0.8);
+    -moz-transform: scaleX(0.8) scaleY(0.8);
+    -ms-transform: scaleX(0.8) scaleY(0.8);
+    -o-transform: scaleX(0.8) scaleY(0.8);
+    transform: scaleX(0.8) scaleY(0.8);
+    display: none
+}
+
+.pop-discount section ul li section .orange {
+    background: #f77058
+}
+
+.pop-discount section ul li section .blue {
+    background: #56b7e8
+}
+
+.pop-discount section ul li section .green {
+    background: #42cfb7
+}
+
+.pop-discount section ul li>p {
+    margin-left: 25px;
+    color: #999;
+    line-height: 20px;
+    font-size: 12px
+}
+
+.pop-discount section ul li.on {
+    background-color: #fffcde
+}
+
+.pop-discount section ul li.on i.duihaoico {
+    display: block
+}
+
+.content>section {
+    background-color: #fff;
+    margin-top: 8px
+}
+
+.content>section:nth-of-type(1) ul li section div {
+    vertical-align: middle
+}
+
+.content>section:nth-of-type(2) ul li p,
+.content>section:nth-of-type(2) ul li section {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 28px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center
+}
+
+.content>section:nth-of-type(2) ul li p input:nth-of-type(1),
+.content>section:nth-of-type(2) ul li section input:nth-of-type(1) {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    margin-left: 10px;
+    display: block
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(2) div {
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(2) div span {
+    width: 50px;
+    height: 25px;
+    display: block;
+    border: 1px solid silver;
+    color: #999;
+    text-align: center;
+    line-height: 25px;
+    opacity: .4
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(2) div span.on {
+    background: #e7604a;
+    color: #fff;
+    border: 1px solid #e7604a;
+    margin-left: -1px;
+    opacity: 1
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(2) div span:nth-of-type(1) {
+    border-radius: 4px 0 0 4px
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(2) div span:nth-of-type(2) {
+    border-radius: 0 4px 4px 0
+}
+
+.content>section:nth-of-type(3) ul {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb
+}
+
+.content>section:nth-of-type(3) ul li {
+    border-bottom: 1px solid #ebebeb;
+    padding: 15px 14px
+}
+
+.content>section:nth-of-type(3) ul li section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center
+}
+
+.content>section:nth-of-type(3) ul li:nth-of-type(1) i {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    line-height: 12px;
+    color: #fff;
+    font-size: 9px;
+    border-radius: 2px;
+    display: block;
+    font-style: normal;
+    margin-right: 5px
+}
+
+.content>section:nth-of-type(3) ul li:nth-of-type(1) .orange {
+    background: #f77058
+}
+
+.content>section:nth-of-type(3) ul li:nth-of-type(1) .blue {
+    background: #56b7e8
+}
+
+.content>section:nth-of-type(3) ul li:nth-of-type(1) .green {
+    background: #42cfb7
+}
+
+.content>section:nth-of-type(3) ul li:nth-of-type(1) div:nth-of-type(1) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    color: #666
+}
+
+.content>section:nth-of-type(3) ul li:nth-of-type(1) div:nth-of-type(1) p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.content>section:nth-of-type(3) ul li:nth-of-type(1) div:nth-of-type(2) {
+    padding: 5px;
+    border-radius: 5px;
+    background: #ebebeb;
+    height: 10px;
+    font-size: 10px;
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box
+}
+
+.content>section:nth-of-type(3) ul li:nth-of-type(1) div:nth-of-type(2) span {
+    color: #747474;
+    display: block
+}
+
+.content>section:nth-of-type(3) ul li:nth-of-type(1) div:nth-of-type(2) em {
+    width: 15px;
+    height: 15px;
+    display: block
+}
+
+.content>section:nth-of-type(3) ul li:nth-of-type(2) div {
+    font-size: 14px;
+    color: #e7604a
+}
+
+.content>section:nth-of-type(4) ul {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb
+}
+
+.content>section:nth-of-type(4) ul li {
+    padding: 7px 0;
+    border-bottom: 1px solid #ebebeb
+}
+
+.content>section:nth-of-type(4) ul li>div {
+    padding-left: 10px
+}
+
+.content>section:nth-of-type(4) ul li section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    padding: 10px 14px
+}
+
+.content>section:nth-of-type(4) ul li section>div {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.content>section:nth-of-type(4) ul li section>div:nth-of-type(2) {
+    margin-right: 20px;
+    text-align: right
+}
+
+.content>section:nth-of-type(4) ul li section>div:nth-of-type(2).font-del {
+    text-decoration: line-through
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    position: relative
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) section>i {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    line-height: 12px;
+    color: #fff;
+    font-size: 9px;
+    border-radius: 2px;
+    display: block;
+    font-style: normal;
+    margin-right: 5px
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) section .orange {
+    background: #f77058
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) section .blue {
+    background: #56b7e8
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) section .green {
+    background: #42cfb7
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) section>div {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) section>span.off-on-new {
+    width: 54px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 15px
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) section>span.off-on-new span.bar-new {
+    display: block;
+    height: 16px;
+    position: absolute;
+    width: 54px;
+    box-sizing: border-box;
+    background: #d8d8d8;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2) inset;
+    border-radius: 8px;
+    top: 50%;
+    margin-top: -8px;
+    -webkit-transition: all 200ms ease-in-out
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) section>span.off-on-new span.scales-new {
+    display: block;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    box-sizing: border-box;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#e6e6e6));
+    border-radius: 13px;
+    top: 0;
+    border: 1px solid #bebebe;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: translate3d(0, 0, 0)
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) section>span.off-on-new.ons-new span.bar-new {
+    background: #e7604a;
+    -webkit-transition: all 200ms ease-in-out
+}
+
+.content>section:nth-of-type(4) ul li:nth-of-type(1) section>span.off-on-new.ons-new span.scales-new {
+    -webkit-transform: translate3d(30px, 0, 0);
+    -webkit-transition: all 200ms ease-in-out
+}
+
+.content>section:nth-of-type(4) ul li.total {
+    text-align: center
+}
+
+.content>section:nth-of-type(1) {
+    background-color: #fff
+}
+
+.content>section:nth-of-type(1) ul {
+    border-bottom: 1px solid #ebebeb
+}
+
+.content>section:nth-of-type(1) ul li {
+    display: block;
+    margin: 0 7px;
+    padding: 7px
+}
+
+.content>section:nth-of-type(1) ul li section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 28px
+}
+
+.content>section:nth-of-type(1) ul li section div {
+    line-height: 20px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.content>section:nth-of-type(1) ul li section span {
+    color: #666;
+    display: block
+}
+
+.content>section:nth-of-type(2) {
+    background-color: #fff;
+    margin-top: 8px
+}
+
+.content>section:nth-of-type(2) ul {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb
+}
+
+.content>section:nth-of-type(2) ul li {
+    display: block;
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 7px;
+    font-size: 15px;
+    padding: 7px
+}
+
+.content>section:nth-of-type(2) ul li section {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 28px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center
+}
+
+.content>section:nth-of-type(2) ul li.ordertitle section {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    line-height: 15px
+}
+
+.content>section:nth-of-type(2) ul li.ordertitle section div {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(3) section span {
+    display: block
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(3) section input {
+    display: block;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(3) section div {
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(3) section div span {
+    width: 50px;
+    height: 25px;
+    display: block;
+    border: 1px solid silver;
+    color: #999;
+    text-align: center;
+    line-height: 25px;
+    opacity: .4
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(3) section div span.on {
+    background: #e7604a;
+    color: #fff;
+    border: 1px solid #e7604a;
+    margin-left: -1px;
+    opacity: 1
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(3) section div span:nth-of-type(1) {
+    border-radius: 4px 0 0 4px
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(3) section div span:nth-of-type(2) {
+    border-radius: 0 4px 4px 0
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(4) article {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(4) article span {
+    padding-right: 7px
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(4) article select {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    min-width: 110px
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(4) article select:nth-of-child(1) {
+    background-image: none;
+    color: #323232;
+    padding-left: 10px;
+    border-left: 1px solid #ebebeb
+}
+
+.content>section:nth-of-type(2) ul li.tel section span {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box
+}
+
+.content>section:nth-of-type(2) ul li.tel section input:nth-of-type(1) {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    display: block;
+    margin-left: 10px
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(5) section span:nth-of-type(1) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box
+}
+
+.content>section:nth-of-type(2) ul li:nth-of-type(5) section input {
+    display: block;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.content>section:nth-of-type(2) ul li.address section span:nth-of-type(1) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box
+}
+
+.content>section:nth-of-type(2) ul li.address section span:nth-of-type(2) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    margin-left: 15px
+}
+
+.content>section:nth-of-type(2) ul li.address section div input {
+    color: #fff;
+    background-color: #e7604a;
+    border-color: #e7604a;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    display: block;
+    padding: 0 20px;
+    box-sizing: border-box
+}
+
+.content>section:nth-of-type(2) ul li.address section div input.focus,
+.content>section:nth-of-type(2) ul li.address section div input:focus {
+    color: #fff;
+    background-color: #e0391e;
+    border-color: #9d2815
+}
+
+.content>section:nth-of-type(2) ul li.address section div input.active,
+.content>section:nth-of-type(2) ul li.address section div input:active,
+.content>section:nth-of-type(2) ul li.address section div input:hover,
+.open>.dropdown-toggle.content>section:nth-of-type(2) ul li.address section div input {
+    color: #fff;
+    background-color: #e0391e;
+    border-color: #d7371d
+}
+
+.content>section:nth-of-type(2) ul li.address section div input.active.focus,
+.content>section:nth-of-type(2) ul li.address section div input.active:focus,
+.content>section:nth-of-type(2) ul li.address section div input.active:hover,
+.content>section:nth-of-type(2) ul li.address section div input:active.focus,
+.content>section:nth-of-type(2) ul li.address section div input:active:focus,
+.content>section:nth-of-type(2) ul li.address section div input:active:hover,
+.open>.dropdown-toggle.content>section:nth-of-type(2) ul li.address section div input.focus,
+.open>.dropdown-toggle.content>section:nth-of-type(2) ul li.address section div input:focus,
+.open>.dropdown-toggle.content>section:nth-of-type(2) ul li.address section div input:hover {
+    color: #fff;
+    background-color: #c1311a;
+    border-color: #9d2815
+}
+
+.content>section:nth-of-type(2) ul li.address section div input.active,
+.content>section:nth-of-type(2) ul li.address section div input:active,
+.open>.dropdown-toggle.content>section:nth-of-type(2) ul li.address section div input {
+    background-image: none
+}
+
+.content>section:nth-of-type(2) ul li.address section div input.disabled,
+.content>section:nth-of-type(2) ul li.address section div input.disabled.active,
+.content>section:nth-of-type(2) ul li.address section div input.disabled.focus,
+.content>section:nth-of-type(2) ul li.address section div input.disabled:active,
+.content>section:nth-of-type(2) ul li.address section div input.disabled:focus,
+.content>section:nth-of-type(2) ul li.address section div input.disabled:hover,
+.content>section:nth-of-type(2) ul li.address section div input[disabled],
+.content>section:nth-of-type(2) ul li.address section div input[disabled].active,
+.content>section:nth-of-type(2) ul li.address section div input[disabled].focus,
+.content>section:nth-of-type(2) ul li.address section div input[disabled]:active,
+.content>section:nth-of-type(2) ul li.address section div input[disabled]:focus,
+.content>section:nth-of-type(2) ul li.address section div input[disabled]:hover,
+fieldset[disabled] .content>section:nth-of-type(2) ul li.address section div input,
+fieldset[disabled] .content>section:nth-of-type(2) ul li.address section div input.active,
+fieldset[disabled] .content>section:nth-of-type(2) ul li.address section div input.focus,
+fieldset[disabled] .content>section:nth-of-type(2) ul li.address section div input:active,
+fieldset[disabled] .content>section:nth-of-type(2) ul li.address section div input:focus,
+fieldset[disabled] .content>section:nth-of-type(2) ul li.address section div input:hover {
+    background-color: #e7604a;
+    border-color: #e7604a
+}
+
+.content>section:nth-of-type(2) ul li.fapiao {
+    position: relative;
+    height: 50px
+}
+
+.content>section:nth-of-type(2) ul li.fapiao section div {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.content>section:nth-of-type(2) ul li.fapiao>div {
+    color: #747474;
+    height: 26px;
+    line-height: 26px;
+    width: 135px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 16px
+}
+
+.content>section:nth-of-type(2) ul li.fapiao>div>span.off-on {
+    width: 54px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.content>section:nth-of-type(2) ul li.fapiao>div>span.off-on span.bar {
+    display: block;
+    height: 16px;
+    position: absolute;
+    width: 54px;
+    box-sizing: border-box;
+    background: #d8d8d8;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .2) inset;
+    border-radius: 8px;
+    top: 50%;
+    margin-top: -8px;
+    -webkit-transition: all 200ms ease-in-out
+}
+
+.content>section:nth-of-type(2) ul li.fapiao>div>span.off-on span.scales {
+    display: block;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    box-sizing: border-box;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#e6e6e6));
+    border-radius: 13px;
+    top: 0;
+    border: 1px solid #bebebe;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: translate3d(0, 0, 0)
+}
+
+.content>section:nth-of-type(2) ul li.fapiao>div>span.off-on.ons span.bar {
+    background: #e7604a;
+    -webkit-transition: all 200ms ease-in-out
+}
+
+.content>section:nth-of-type(2) ul li.fapiao>div>span.off-on.ons span.scales {
+    -webkit-transform: translate3d(30px, 0, 0);
+    -webkit-transition: all 200ms ease-in-out
+}
+
+.content>div.translbox {
+    -webkit-transition: all 200ms ease-in-out;
+    -webkit-transform: translate3d(0, -66px, 0)
+}
+
+.content>div.translbox.ons {
+    -webkit-transition: all 200ms ease-in-out;
+    -webkit-transform: translate3d(0, -9px, 0)
+}
+
+.content>div.translbox>section:nth-of-type(1) {
+    background-color: #fff;
+    margin-top: 8px
+}
+
+.content>div.translbox>section:nth-of-type(1) ul li {
+    margin: 0 7px;
+    padding: 0 7px;
+    display: block
+}
+
+.content>div.translbox>section:nth-of-type(1) ul li section {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 28px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center
+}
+
+.content>div.translbox>section:nth-of-type(1) ul li section div {
+    margin-right: 7px
+}
+
+.content>div.translbox>section:nth-of-type(1) ul li section input {
+    display: block;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.content>div.translbox>section:nth-of-type(2) {
+    background-color: #fff;
+    margin-top: 8px
+}
+
+.content>div.translbox>section:nth-of-type(2) ul {
+    overflow-y: scroll;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb
+}
+
+.content>div.translbox>section:nth-of-type(2) ul li {
+    display: none;
+    border-bottom: 1px solid #ebebeb;
+    padding: 15px 14px
+}
+
+.content>div.translbox>section:nth-of-type(2) ul li section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center
+}
+
+.content>div.translbox>section:nth-of-type(2) ul li section i.orange {
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    line-height: 12px;
+    color: #fff;
+    font-size: 9px;
+    border-radius: 2px;
+    display: block;
+    font-style: normal;
+    margin-right: 5px
+}
+
+.content>div.translbox>section:nth-of-type(2) ul li section div:nth-of-type(1) {
+    color: #666;
+    font-size: 13px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.content>div.translbox>section:nth-of-type(2) ul li section div:nth-of-type(2) {
+    padding: 5px;
+    border-radius: 5px;
+    background: #ebebeb;
+    height: 10px;
+    font-size: 10px;
+    margin-left: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center
+}
+
+.content>div.translbox>section:nth-of-type(2) ul li section div:nth-of-type(2) span {
+    display: block
+}
+
+.content>div.translbox>section:nth-of-type(2) ul li section div:nth-of-type(2) span em {
+    width: 15px;
+    height: 15px;
+    display: block;
+    font-size: 12px
+}
+
+.content>div.translbox>section:nth-of-type(3) {
+    margin-top: 8px;
+    background-color: #fff
+}
+
+.content>div.translbox>section:nth-of-type(3) ul {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb
+}
+
+.content>div.translbox>section:nth-of-type(3) ul li {
+    margin: 0 7px;
+    padding: 7px;
+    display: block
+}
+
+.content>div.translbox>section:nth-of-type(3) ul li section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 28px
+}
+
+.content>div.translbox>section:nth-of-type(3) ul li section>div {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1;
+    font-size: 14px
+}
+
+.content>div.translbox>section:nth-of-type(3) ul li i.duihaoico {
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    box-sizing: border-box;
+    -webkit-transform: scale(0.8);
+    display: none;
+    background-color: #fff;
+    border: 2px solid #e7604a
+}
+
+.content>div.translbox>section:nth-of-type(3) ul li.on {
+    color: #d0503b;
+    background-color: #fefef2
+}
+
+.content>div.translbox>section:nth-of-type(3) ul li.on i.duihaoico {
+    display: block
+}
+
+.content>div.translbox>section:nth-of-type(3) ul li:nth-of-type(1) {
+    line-height: 15px;
+    padding: 0 7px
+}
+
+.content>div.translbox>section:nth-of-type(3) ul li:nth-of-type(1) div {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.content>div.translbox>section:nth-of-type(3) ul li:nth-of-type(1) p {
+    font-size: 13px
+}
+
+.content>div.translbox>section:nth-of-type(4) {
+    background: #fffef3;
+    margin-top: 8px
+}
+
+.content>div.translbox>section:nth-of-type(4) ul {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb
+}
+
+.content>div.translbox>section:nth-of-type(4) ul li {
+    display: block;
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 7px;
+    padding: 7px
+}
+
+.content>div.translbox>section:nth-of-type(4) ul li section {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    box-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 28px
+}
+
+.content>div.translbox>section:nth-of-type(4) ul li section div {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    flex: 1
+}
+
+.remark {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box
+}
+
+i.none {
+    visibility: hidden!important
+}
+
+i.icon.icon-restaurant-closed {
+    font-weight: 400;
+    font-size: 28px;
+    margin-right: 5px;
+    vertical-align: middle
+}

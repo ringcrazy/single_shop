@@ -1,0 +1,212 @@
+@import "variables";
+@import "lib/basic";
+@import "lib/reset";
+@import "lib/layout";
+@import "input";
+@import "icon";
+@import "button";
+.g-wrap,.g-views,.g-main{
+    height:100%;
+    width:100%;
+}
+.g-wrap{
+    position: relative;
+}
+
+.g-main{
+    padding-top:@headBarHeight;
+}
+
+@media only screen and (min-width: 540px){
+    .header{
+        height:@headBarHeight + 0.5rem;
+    }
+    .adr-bar{
+        height:@adrBarHeight + 0.5rem;
+    }
+    .g-main{
+        margin-top:@headBarHeight +1rem;
+    }
+}
+
+// @media screen and (orientation:portrait) {
+// .landscape-tips-body{
+    .g-wrap {
+        display: block;
+    }
+    .screen {
+        display: none;
+    }
+// }
+// 横屏提示
+// @media screen and (orientation:landscape){ 
+.landscape-tips-body{
+    .g-wrap {
+        display: none;
+    }
+    .screen {
+        i{
+            font-size:9rem;
+        }
+        display: block;
+        position: absolute;
+        left:0;
+        top:50%;
+        width:100%;
+        .transform(translate(0,-50%));
+        line-height: 50px;
+        font-size:20px;
+        color:@txtBaseColor;
+        text-align:center;
+    }
+}
+
+
+.hide{
+    display:none!important;
+}
+//弹窗
+.dialog{
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:998;
+    overflow:hidden;
+    .transform(translate(-50%,-60%));
+    width:70%;
+    height:auto;
+    max-height:70%;
+    background-color:@baseMainColor;
+    #box .radius(5px);
+    .d-inner{
+      position:relative;
+      width:100%;
+      height:100%;
+    }
+    .d-close{
+      position:absolute;
+      right:1rem;
+      top:1rem;
+      font-size:1.5rem;
+    }
+    .d-title{
+      padding:1rem;
+      font-size:1.8rem;
+      text-align:center;
+    }
+    p{
+      color:@txtSubColor;
+      text-align:center;
+    }
+    .btn-box{
+        #display .box();
+        #display .box-align(center,justify);
+        margin-top:2rem;
+        #box .line(@borderBaseImg,2 stretch,@borderBaseColor,1px 0 0 0);
+        .m-btn{
+            display:block;
+            #display .flex(1);
+            height:4rem;
+            font-size:1.4rem;
+            background-color:@baseMainColor;
+            #box .line(@borderBaseImg,2 stretch,@borderBaseColor,0 1px 0 0);
+            color:@txtBaseColor;
+            &:last-child{
+                border-width: 0;
+            }
+            &:hover,&:focus{
+                background-color:@bgHightColor;
+                color:@baseMainColor;
+            }
+        }
+    }
+}
+//提示弹窗
+.tips{
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:999;
+    overflow:hidden;
+    .transform(translate(-50%,-60%));
+    #box .radius(3px);
+    padding:1rem 2rem;
+    background-color:rgba(51, 51, 51, 0.9);
+    color:@baseMainColor;
+    font-size:1.3rem;
+    vertical-align: middle;
+    i{
+        font-size:2rem;
+        margin-right:1rem;
+        margin-top:-3px;
+    }
+}
+
+//背景层
+.lay{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:100;
+  width:100%;
+  height:100%;
+  background-color:@baseSubColor;
+  opacity:0.5;
+}
+
+//账户设置-列表
+.ticket{
+    background-color:@baseMainColor;
+    margin-top: 0.83rem;
+    #box .line(@borderBaseImg,2 stretch,@borderBaseColor,1px 0 1px 0);
+    a{
+        height: 4rem;
+        line-height: 4rem;
+        margin: 0 1.25rem;
+        display: block;
+        #box .line(@borderBaseImg,2 stretch,@borderBaseColor,0 0 1px 0);
+        #display .box();
+        #display .box-align(center,center);
+        div{
+            font-size: 1.5rem;
+            #display .flex(3);
+            display: block;
+            text-align: left;
+            i{
+                font-size: 1.48rem;
+                margin: -2px 0.8rem 0 4px;
+                color: @iconDeep;
+            }
+        }
+        span{
+            #display .flex(1);
+                display: block;
+                color: @iconShallow;
+                text-align: right;
+            .i-back{
+                transform:rotate(180deg);
+                -ms-transform:rotate(180deg);     /* IE 9 */
+                -moz-transform:rotate(180deg);    /* Firefox */
+                -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+                -o-transform:rotate(180deg);  /* Opera */
+                margin-top: -2px;
+            }
+        }
+    }
+    a:nth-last-of-type(1){
+        #box .line(@borderBaseImg,2 stretch,@borderBaseColor,0 0 0px 0);
+    }
+}
+
+.g-main.no-activity{
+    padding-top:@headBarHeight;
+
+    .menu-list .menu-nav{
+        padding-top:@headBarHeight;
+    }
+
+    .li-title{
+        top:@headBarHeight;
+    }
+}
+

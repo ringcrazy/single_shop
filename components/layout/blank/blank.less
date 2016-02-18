@@ -1,0 +1,67 @@
+@import "variables";
+@import "lib/basic";
+@import "lib/reset";
+@import "lib/layout";
+@import "input";
+@import "icon";
+@import "button";
+.g-wrap,.g-views,.g-main{
+    height:100%;
+    width:100%;
+}
+.g-wrap{
+    position: relative;
+}
+
+.g-main{
+    padding-top:@headBarHeight;
+}
+
+@media only screen and (min-width: 540px){
+    .header{
+        height:@headBarHeight + 0.5rem;
+    }
+    .adr-bar{
+        height:@adrBarHeight + 0.5rem;
+    }
+    .g-main{
+        margin-top:@headBarHeight +1rem;
+    }
+}
+
+// @media screen and (orientation:portrait) {
+// .landscape-tips-body{
+    .g-wrap {
+        display: block;
+    }
+    .screen {
+        display: none;
+    }
+// }
+// 横屏提示
+// @media screen and (orientation:landscape){ 
+.landscape-tips-body{
+    .g-wrap {
+        display: none;
+    }
+    .screen {
+        i{
+            font-size:9rem;
+        }
+        display: block;
+        position: absolute;
+        left:0;
+        top:50%;
+        width:100%;
+        .transform(translate(0,-50%));
+        line-height: 50px;
+        font-size:20px;
+        color:@txtBaseColor;
+        text-align:center;
+    }
+}
+
+
+.hide{
+    display:none!important;
+}

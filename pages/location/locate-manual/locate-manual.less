@@ -1,0 +1,276 @@
+// reset
+input{
+	border:none;
+	outline:none;
+}
+body{
+	background-color: #eef1f7;
+}
+
+// common
+.d-none{
+	display: none !important;
+}
+
+// icon样式
+.i-search{
+    font-size: 16px;
+    font-weight: bold;
+    color:#a8b2be;
+}
+.i-locate-manual{
+    color: #fd5b37;
+    font-weight: bold;
+    font-size: 16px;
+}
+.i-close{
+    color:#fff;
+    font-weight:bold;
+    font-size:8px;
+    .transform(scale(0.8,0.8));
+}
+
+
+// 输入地址框
+.search-box{
+	padding:5px 10px;
+	background-color:#fff;
+	position:relative;
+	i.i-search{
+		position:absolute;
+		top:10px;
+		left:15px;
+	}
+	input{
+		width:100%;
+		height:26px;
+		display: block;
+		background-color: #eef1f7;
+		font-size: 13px;
+		box-sizing:border-box;
+		padding:0 25px;
+	}
+	.addr-icon{
+		position: absolute;
+		top:0;
+		right:15px;
+		margin-top:8px;
+	}
+}
+
+// 定位当前地址
+.locate-box{
+	margin-top:10px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #fff;
+	font-size: 14px;
+	vertical-align: middle;
+	i,span{
+		vertical-align: middle;
+	}
+	span{
+		color:#1c283e;
+		&.on{
+			color:#fd5b37;
+		}
+	}
+}
+
+// 定位中
+.loading {
+    background: url('loading.png');
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+    .animation('rotate' 1.5s linear infinite);
+}
+
+// 历史地址及搜索地址
+.history-address-box,
+.delivery-address-box,
+.search-address-box {
+    font-size: 14px;
+    margin-top: 10px;
+    ul {
+        background-color: #fff;
+    }
+    li {
+        height: 60px;
+        
+        border-bottom: 1px solid #bfc9d5;
+        >section {
+            padding: 0 15px;
+            #display .box();
+            #display .orient(orizontal);
+        }
+    }
+    .addr-text,.delivery-addr-text {
+        
+        #display .flex(1);
+    }
+
+    .addr-icon-box{
+        #display .box();
+        #display .box-align(center,center);
+        width:30px;
+    }
+    .addr-icon{
+        
+
+    }
+    .address-close {
+        
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #fff;
+        color: #3388f1;
+    }
+}
+
+.search-address-box {
+    margin-top: 0;
+    ul {
+        border-top: 1px solid #bfc9d5;
+    }
+}
+
+// 单条记录 关闭按钮
+.addr-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #c7cedb;
+    #display .box();
+    #display .box-align(center,center);
+    i {
+       
+        display: block;
+        // .scale(0.8,0.8);
+    }
+}
+
+// 单条记录
+.addr-text{
+    .street{
+        font-weight: normal;
+        font-size: 14px;
+        height: 35px;
+        line-height: 40px;
+        #text .ellipsis();
+    }
+    .city{
+        color:#7f8aa0;
+    }
+}
+
+// 历史地址 单条记录
+.delivery-addr-text{
+    .info{
+         color:#7f8aa0;
+          height: 30px;
+        line-height: 35px;
+    }
+    .address{
+        font-weight: normal;
+        font-size: 14px;
+       
+        #text .ellipsis();
+    }
+}
+
+// 标题
+.history-address-title, .delivery-title{
+     padding: 5px 15px;
+}
+
+// 新增地址
+.new-address {
+    text-align: right;
+    margin-top: -27px;
+    color: #fd5b37;
+    margin-right:5px;
+    float: right;
+}
+
+
+
+// 动画
+@-webkit-keyframes 'rotate' {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes 'rotate' {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    50% {
+        -moz-transform: rotate(180deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes rotate {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+    50% {
+        -ms-transform: rotate(180deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotate {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    50% {
+        -o-transform: rotate(180deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@keyframes 'rotate' {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// 状态
+.status {
+    >div {
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #fff;
+        &.status-error{
+        	color: #fd5b37;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,1070 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Untitled</title>
+    <meta charset="utf-8" /></head>
+<style>
+
+html {
+    background: none repeat scroll 0 0 #F2F2F2;
+    color: #303030;
+    font-size: 12px;
+}
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, figure, form, fieldset, legend, input, textarea, button, p, blockquote, th, td, pre, xmp {
+    margin: 0;
+    padding: 0;
+}
+body, input, textarea, button, select, pre, tt, code, kbd, samp, optgroup, option {
+    font-family: arial,'微软雅黑','宋体',arial,verdana,helvetica,sans-serif;
+    line-height: 1.5;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+}
+caption, th {
+    text-align: inherit;
+}
+ul, ol, menu {
+    list-style: none outside none;
+}
+fieldset, img {
+    border: 0 none;
+}
+img, object, input, textarea, button, select {
+    vertical-align: top;
+}
+article, aside, footer, header, section, nav, figure, figcaption, hgroup, details, menu {
+    display: block;
+}
+audio, canvas, video {
+    display: inline-block;
+}
+h1, h2, h3, h4, h5, h6, input, textarea, button, select, small {
+    font-size: 100%;
+}
+address, cite, dfn, em, i, optgroup, var {
+    font-style: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+textarea {
+    overflow: auto;
+    resize: none;
+}
+textarea, input {
+    outline: medium none;
+}
+mark {
+}
+ins, s, u, del {
+    text-decoration: none;
+}
+a {
+    color: #4083A9;
+    text-decoration: none;
+}
+a:hover {
+    color: #325371;
+    text-decoration: none;
+}
+button {
+    border: 0 none;
+}
+input[disabled] {
+    background: none repeat scroll 0 0 #F4F4F4;
+    color: #D6D6D6;
+}
+#xg-front {
+    height: 100%;
+}
+#hd, #bd, #ft, .hd, .bd, .ft, .g-clear, .g-mod, .g-mod .inner {
+}
+#hd:after, #bd:after, #ft:after, .hd:after, .bd:after, .ft:after, .g-clear:after, .g-mod:after, .g-mod .inner:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+html, body {
+    height: 100%;
+}
+body {
+    min-width: 1010px;
+}
+#hd, #bd, #ft {
+    position: relative;
+}
+#hd {
+    z-index: 2;
+}
+#bd {
+    margin: -78px auto -189px;
+    min-height: 100%;
+    width: 1010px;
+}
+#bd-inner {
+    padding: 103px 0 189px;
+}
+#ft {
+    z-index: 3;
+}
+.m-atten-icon {
+    background-image: url("/img/xg/icon-attention.png?v=0.0.2");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 30px;
+    text-indent: -999em;
+    vertical-align: middle;
+    width: 30px;
+}
+.i-attention {
+    background-position: 0 0;
+}
+.i-attention:hover {
+    background-position: 0 -32px;
+}
+.i-atten-s {
+    background-position: 0 -129px;
+    height: 14px;
+    vertical-align: bottom;
+    width: 14px;
+}
+.i-atten-s:hover {
+    background-position: -15px -129px;
+}
+.i-cancel-s {
+    background-position: -30px -129px;
+    height: 14px;
+    vertical-align: bottom;
+    width: 14px;
+}
+.i-cancel-s:hover {
+    background-position: -45px -129px;
+}
+.share-icon {
+    background: url("/img/xg/i-share.png?v=0.0.2") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 24px;
+    margin-left: 6px;
+    width: 24px;
+}
+.i-share-sina {
+    background-position: 0 -28px;
+}
+.i-share-sina:hover {
+    background-position: 0 0;
+}
+.i-share-qq {
+    background-position: -30px -28px;
+}
+.i-share-qq:hover {
+    background-position: -30px 0;
+}
+.i-share-qqz {
+    background-position: -60px -28px;
+}
+.i-share-qqz:hover {
+    background-position: -60px 0;
+}
+.i-share-dou {
+    background-position: -90px -28px;
+}
+.i-share-dou:hover {
+    background-position: -90px 0;
+}
+.i-share-ren {
+    background-position: -120px -28px;
+}
+.i-share-ren:hover {
+    background-position: -120px 0;
+}
+.i-share-more {
+    background-position: -150px -28px;
+}
+.i-share-more:hover {
+    background-position: -150px -1px;
+}
+.c-icon {
+    background: url("/img/xg/i-collect.png?v=0.0.2") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 88px;
+    width: 88px;
+}
+.i-collect {
+    background-position: 0 0;
+}
+.i-collect:hover {
+    background-position: 0 -92px;
+}
+.i-folder {
+    background-position: 0 -187px;
+}
+.m-pagin {
+    font-family: arial;
+    font-size: 0;
+}
+.m-pagin a, .m-pagin .prev, .m-pagin .next, .m-pagin .now, .m-pagin .more, .m-pagin .skip {
+    display: inline-block;
+    font-family: arial,'微软雅黑','宋体',arial,verdana,helvetica,sans-serif;
+    font-size: 12px;
+    letter-spacing: normal;
+    margin: 0 3px;
+    vertical-align: top;
+    word-spacing: normal;
+}
+.m-pagin a, .m-pagin .prev, .m-pagin .next, .m-pagin .now, .m-pagin .more {
+    border-radius: 4px 4px 4px 4px;
+    font-size: 14.004px;
+}
+.m-pagin a:hover {
+    text-decoration: none;
+}
+.m-pagin span.prev, .m-pagin span.next {
+    color: #D5D5D5;
+}
+.m-pagin-normal {
+    padding: 30px 0 10px;
+    text-align: center;
+}
+.m-pagin-normal strong {
+    font-weight: normal;
+}
+.m-pagin-normal a, .m-pagin-normal .prev, .m-pagin-normal .next, .m-pagin-normal .now, .m-pagin-normal .more {
+    border-style: solid;
+    border-width: 1px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+}
+.m-pagin-normal a {
+    border-color: transparent;
+    color: #303030;
+}
+.m-pagin-normal a:hover {
+    background-color: #999999;
+    background-image: linear-gradient(180deg, #999999, #838383);
+    color: #FFFFFF;
+}
+.m-pagin-normal .prev, .m-pagin-normal .next {
+    background-image: linear-gradient(180deg, #FFFFFF, #F7F6F5);
+    font-family: lucida;
+    font-size: 16px;
+    font-weight: bold;
+}
+.m-pagin-normal a.prev, .m-pagin-normal a.next {
+    background: none repeat scroll 0 0 #F7F6F5;
+    border-color: #D5D5D5;
+    color: #999999;
+}
+.m-pagin-normal a.prev:hover, .m-pagin-normal a.next:hover {
+    background-image: linear-gradient(180deg, #FFFFFF, #EEEEF0);
+    border-color: #CCCCCC;
+    color: #999999;
+}
+.m-pagin-normal span.prev, .m-pagin-normal span.next {
+    border-color: #E6E6E6;
+    font-weight: bold;
+}
+.m-pagin-normal .now {
+    background-color: #999999;
+    background-image: linear-gradient(180deg, #999999, #838383);
+    border-color: #999999;
+    color: #FFFFFF;
+}
+.m-pagin-normal .more {
+    border-color: transparent;
+}
+.m-pagin-normal .skip {
+    color: #838383;
+    padding: 6px 10px 0;
+    vertical-align: middle;
+}
+.m-pagin-normal .skip .entry-box {
+    background: url("/img/common/ico-list.png?v=0.0.2") no-repeat scroll right -18px #FFFFFF;
+    border: 1px solid #D5D5D5;
+    box-shadow: 0 0 2px 0 #D5D5D5 inset;
+    margin: 0 8px;
+    padding: 4px 17px 3px 5px;
+    width: 28px;
+}
+.m-pagin-normal .skip .entry {
+    border: 0 none;
+    height: 16px;
+    width: 28px;
+}
+.mod-head {
+    background-color: #FFFFFF;
+    color: #808080;
+    height: 62px;
+    width: 100%;
+}
+.mod-head .inner {
+    background-color: #FFFFFF;
+    height: 45px;
+    margin: 0 auto;
+    width: 1010px;
+}
+.mod-nav {
+    background: url("/img/xg/nav-bg.png?v=0.0.2") repeat-x scroll 0 0 transparent;
+    color: #808080;
+    height: 40px;
+    width: 100%;
+}
+.mod-nav .inner {
+    background: url("/img/xg/nav-bg.png?v=0.0.2") repeat-x scroll 0 0 transparent;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    width: 1010px;
+}
+.mod-nav .hd {
+    padding-left: 188px;
+}
+.mod-nav .hd li {
+    float: left;
+}
+.mod-nav .hd li a {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+}
+.mod-nav .hd li a:hover {
+    background: none repeat scroll 0 0 #0E0E0E;
+    text-decoration: none;
+}
+.mod-nav .hd li .current {
+    background: none repeat scroll 0 0 #0E0E0E;
+}
+.mod-nav .hd .myspace img {
+    border: 1px solid #FFFFFF;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.mod-footer {
+    background: url("/img/xg/ft-bg.png?v=0.0.2") repeat-x scroll 0 0 transparent;
+    height: 189px;
+    width: 100%;
+}
+.mod-footer .inner {
+    background: url("/img/xg/ft-bg.png?v=0.0.2") repeat-x scroll 0 0 transparent;
+    height: 144px;
+    margin: 0 auto;
+    padding-top: 45px;
+    width: 1010px;
+}
+.mod-footer .hd {
+    color: #838383;
+    float: left;
+    width: 350px;
+}
+.mod-footer .bd {
+    float: left;
+    width: 660px;
+}
+.mod-footer .bd dl {
+    float: left;
+    width: 165px;
+}
+.mod-footer .bd dt {
+    color: #FFFFFF;
+    font-size: 16px;
+    height: 34px;
+}
+.mod-footer .bd dd {
+    height: 22px;
+}
+.mod-footer .bd dd a {
+    color: #D5D5D5;
+}
+.mod-footer .bd dd a:hover {
+    color: #D5D5D5;
+}
+.m-hide {
+    display: none;
+}
+.m-hr {
+    background-color: #FFFFFF;
+    border-top: 1px solid #D0D0D0;
+    height: 1px;
+    overflow: hidden;
+    text-indent: -999em;
+}
+.c-minor {
+    color: #838383;
+}
+.main {
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 824px;
+}
+.main:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.avtar {
+    float: left;
+    width: 90px;
+}
+.m-valign-card {
+    width: 73px;
+}
+.m-valign-card .mc-avatar {
+    background-image: url("/img/xg/avatar-bg.png?v=0.0.2");
+    background-repeat: no-repeat;
+    height: 60px;
+    padding: 4px 6px 13px 7px;
+    width: 60px;
+}
+.m-valign-card .mc-avatar a {
+    display: block;
+}
+.m-valign-card .mc-name {
+    font-size: 14px;
+    font-weight: bold;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.m-valign-card .add-attention {
+    margin-top: 5px;
+}
+.m-valign-card .mc-content {
+    padding-top: 5px;
+    text-align: center;
+}
+.item-cover {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.item-pic {
+    background: none repeat scroll 0 0 #E8E8E8;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.item-pic img {
+    vertical-align: middle;
+}
+.mask-layer {
+    color: #D5D5D5;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.mask-layer .detail-link {
+    background: none repeat scroll 0 0 #000000;
+    display: block;
+    height: 100%;
+    opacity: 0.6;
+    width: 100%;
+}
+.describe {
+    bottom: 20px;
+    font-size: 14px;
+    height: 18px;
+    left: 50%;
+    margin-left: -140px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    width: 20em;
+    z-index: 3;
+}
+.describe a {
+    color: #D5D5D5;
+}
+.describe a:hover {
+    text-decoration: none;
+}
+.collect-box {
+    height: 120px;
+    left: 50%;
+    margin: -60px 0 0 -44px;
+    position: absolute;
+    top: 50%;
+    width: 88px;
+    z-index: 2;
+}
+.collect-box p {
+    font-size: 14px;
+    padding-top: 5px;
+    text-align: center;
+}
+.collect-box a {
+    color: #FFFFFF;
+}
+.collect-box a:hover {
+    text-decoration: none;
+}
+.collect-box .hightlight {
+    color: #52B5C3;
+}
+.price {
+    color: #FFFFFF;
+    font-size: 14px;
+    left: 20px;
+    position: absolute;
+    top: 17px;
+    z-index: 3;
+}
+.share {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+}
+.item-cover-big {
+    float: left;
+}
+.item-cover-big .item-cover, .item-cover-big .item-pic {
+    height: 640px;
+    width: 640px;
+}
+.item-cover-small {
+    float: left;
+    height: 310px;
+    width: 402px;
+}
+.item-cover-small .item-cover, .item-cover-small .item-pic {
+    height: 310px;
+    width: 310px;
+}
+.item-cover-big, .item-cover-small {
+    padding-bottom: 20px;
+}
+.item-cover-big:after, .item-cover-small:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.item-box-right {
+    float: right;
+}
+.item-box-right .avtar {
+    float: right;
+}
+.item-box-right .m-valign-card {
+    float: right;
+}
+.loading {
+    padding: 20px 0 40px;
+    text-align: center;
+    width: 100%;
+}
+.loading:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.go-top {
+    background: url("/img/xg/go-top.png?v=0.0.2") no-repeat scroll 0 0 transparent;
+    bottom: 50px;
+    display: block;
+    height: 48px;
+    position: fixed;
+    right: 50px;
+    width: 48px;
+    z-index: 199;
+}
+.go-top:hover {
+    background: url("/img/xg/go-top.png?v=0.0.2") no-repeat scroll 0 -51px transparent;
+}
+.title-l {
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 1;
+    width: 100%;
+}
+.title-l span {
+    float: right;
+    font-size: 12px;
+    padding-top: 9px;
+}
+.title-s {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1;
+    width: 100%;
+}
+.title-s span {
+    float: right;
+    font-size: 12px;
+    padding-top: 4px;
+}
+.popup-inner .bd {
+    padding-top: 20px;
+}
+.popup-inner .btn-box {
+    padding-top: 30px;
+}
+.popup-inner input {
+    margin-right: 10px;
+    vertical-align: -1px;
+}
+.popup-modify-folder .l {
+    float: left;
+    margin-right: 40px;
+    width: 230px;
+}
+.popup-modify-folder .l p {
+    color: #838383;
+    margin-top: 10px;
+}
+.popup-modify-folder .r {
+    float: left;
+    width: 270px;
+}
+.popup-modify-folder .r .suspect {
+    margin-top: 10px;
+}
+.popup-modify-folder .r .suspect a {
+    color: #838383;
+    padding-right: 15px;
+}
+.popup-modify-folder .r .suspect a:hover {
+    text-decoration: none;
+}
+.popup-modify-folder .myfolder {
+    border: 1px solid #C9C9C9;
+    color: #838383;
+    font-size: 14px;
+    height: 212px;
+    margin: 20px 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 12px;
+    width: 244px;
+}
+.popup-modify-folder .myfolder li {
+    height: 28px;
+}
+.popup-modify-folder .myfolder .checked {
+    color: #303030;
+}
+.popup-modify-folder .m-inp {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D5D5D5;
+    box-shadow: 0 0 2px 0 #D5D5D5 inset;
+    color: #303030;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding: 6px 9px;
+    position: relative;
+    vertical-align: middle;
+    width: 250px;
+}
+.popup-modify-folder .m-inp:focus {
+    border: 1px solid #56CBDB;
+    box-shadow: 0 0 2px 0 #56CBDB inset;
+}
+.popup-modify-folder .m-inp-hov {
+    border: 1px solid #C5C5C5;
+    box-shadow: 0 0 2px 0 #C5C5C5 inset;
+}
+.popup-modify-folder .m-inp-def {
+    color: #D5D5D5;
+}
+.popup-modify-folder .m-btn {
+    background-color: transparent;
+    background-image: url("/img/xg/btn.png?v=0.0.2");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.popup-modify-folder .btn-ln {
+    background-position: 0 0;
+    color: #FFFFFF;
+    font-size: 14.004px;
+    font-weight: normal;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 100px;
+}
+.popup-modify-folder .btn-ln:hover, .popup-modify-folder .btn-ln-hover {
+    background-position: 0 -39px;
+    color: #FFFFFF;
+}
+.popup-modify-folder .btn-gn {
+    background-position: -232px 0;
+    color: #303030;
+    font-size: 14.004px;
+    font-weight: normal;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 100px;
+}
+.popup-modify-folder .btn-gn:hover, .popup-modify-folder .btn-gn-hover {
+    background-position: -232px -39px;
+    color: #303030;
+}
+.popup-modify-folder .btn-ln {
+    margin-right: 20px;
+}
+.m-pagin-normal {
+    padding-bottom: 60px;
+}
+
+</style>
+<body>
+<div id="xg-front">
+    <header id="hd">
+         <!-- 头部 -->
+        <section class="mod mod-head">
+    <div class="inner">
+        <h1 class="head-hd"><a class="logo" title="喜瓜" href="#">logo</a></h1>
+        <div class="head-bd">
+
+        </div>
+        <div class="ft"></div>
+    </div>
+</section>        <!-- 一级导航 -->
+        <section class="mod mod-nav">
+    <div class="inner">
+        <ul class="hd">
+            <li><a class="current" href="#">首页</a></li>
+            <li><a href="#">商店</a></li>
+            <li><a href="#">发现</a></li>
+            <li class="myspace"><a href="#">我的空间<img src="//r.xgimg.net/img/temp/avatar-20x20.png"></a></li>
+        </ul>
+    </div>
+</section>    </header>
+    <section id="bd">
+        <div id="bd-inner">
+            <div class="main">
+                <div class="item-cover-big">
+                    <div class="avtar">
+                        <div class="m-valign-card">
+                            <div class="mc-avatar">
+                                <a href="#">
+                                    <img width="60" height="60" src="//r.xgimg.net/img/temp/avatar-20x20.png"></a>
+                            </div>
+                            <div class="mc-content  m-hide">
+                                <p class="mc-name">
+                                    <a href="#">Nikete</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-cover">
+                        <div class="item-pic">
+                            <a href="http://z.cn/"><img alt="商品描述" src="//r.xgimg.net/img/temp/p-640.png"></a>
+                        </div>
+                        <div class="mask-layer">
+                            <a class="detail-link" href="http://z.cn/"></a>
+                            <div class="collect-box">
+                                <a class="c-icon i-collect" href=""></a>
+                                <p>收藏 +<span>1982</span></p>
+                            </div>
+                            <div class="price">
+                                ￥1688.00
+                            </div>
+                            <div class="share">
+                                <a class="share-icon i-share-sina" href="javascript:;"></a>
+                                <a class="share-icon i-share-qq" href="javascript:;"></a>
+                                <a class="share-icon i-share-qqz m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-dou m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-ren m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-more" href="javascript:;"></a>
+                            </div>
+                            <div class="describe"><a href="">镂空的艺术，UIASS设计师大作推荐</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-cover-big">
+                    <div class="avtar">
+                        <div class="m-valign-card">
+                            <div class="mc-avatar">
+                                <a href="#">
+                                    <img width="60" height="60" src="//r.xgimg.net/img/temp/avatar-20x20.png">
+                                </a>
+                            </div>
+                            <div class="mc-content">
+                                <p class="mc-name">
+                                    <a href="#">Nikete</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-cover">
+                        <div class="item-pic">
+                            <a href="http://z.cn/"><img alt="商品描述" src="//r.xgimg.net/img/temp/p-640.png"></a>
+                        </div>
+                        <div class="mask-layer">
+                            <a class="detail-link" href="http://z.cn/"></a>
+                            <div class="collect-box">
+                                <a class="c-icon i-collect" href=""></a>
+                                <p>收藏 +<span>1982</span></p>
+                            </div>
+                            <div class="price">
+                                ￥1688.00
+                            </div>
+                            <div class="share">
+                                <a class="share-icon i-share-sina" href="javascript:;"></a>
+                                <a class="share-icon i-share-qq" href="javascript:;"></a>
+                                <a class="share-icon i-share-qqz m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-dou m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-ren m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-more" href="javascript:;"></a>
+                            </div>
+                            <div class="describe"><a href="">镂空的艺术，UIASS设计师大作推荐</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-cover-small">
+                    <div class="avtar">
+                        <div class="m-valign-card">
+                            <div class="mc-avatar">
+                                <a href="#">
+                                    <img width="60" height="60" src="//r.xgimg.net/img/temp/avatar-20x20.png">
+                                </a>
+                            </div>
+                            <div class="mc-content">
+                                <p class="mc-name">
+                                    <a href="#">Nikete</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-cover">
+                        <a class="item-pic" href="">
+                            <img alt="商品描述" src="//r.xgimg.net/img/temp/p-310.png">
+                        </a>
+                        <div class="mask-layer">
+                            <a class="detail-link" href=""></a>
+                            <div class="collect-box">
+                                <a class="c-icon i-collect" href=""></a>
+                                <p>收藏 +<span>1982</span></p>
+                            </div>
+                            <div class="share">
+                                <a class="share-icon i-share-sina" href="javascript:;"></a>
+                                <a class="share-icon i-share-qq" href="javascript:;"></a>
+                                <a class="share-icon i-share-qqz m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-dou m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-ren m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-more" href="javascript:;"></a>
+                            </div>
+                            <div class="describe"><a href="">镂空的艺术，UIASS设计师大作推荐</a></div>
+                        </div>
+
+                      </div>
+                </div>
+
+                <div class="item-cover-small item-box-right">
+                    <div class="avtar">
+                        <div class="m-valign-card">
+                            <div class="mc-avatar">
+                                <a href="#">
+                                    <img width="60" height="60" src="//r.xgimg.net/img/temp/avatar-20x20.png">
+                                </a>
+                            </div>
+                            <div class="mc-content">
+                                <p class="mc-name">
+                                    <a href="#">Nikete</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-cover">
+                        <a class="item-pic" href="">
+                            <img alt="商品描述" src="//r.xgimg.net/img/temp/p-310.png">
+                        </a>
+                        <div class="mask-layer">
+                            <a class="detail-link" href=""></a>
+                            <div class="collect-box">
+                                <a class="c-icon i-folder" href=""></a>
+                                <p><a href="">编辑</a></p>
+                            </div>
+                            <div class="share">
+                                <a class="share-icon i-share-sina" href="javascript:;"></a>
+                                <a class="share-icon i-share-qq" href="javascript:;"></a>
+                                <a class="share-icon i-share-qqz m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-dou m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-ren m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-more" href="javascript:;"></a>
+                            </div>
+                            <div class="describe"><a href="">镂空的艺术，UIASS设计师大作推荐</a></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="item-cover-big">
+                    <div class="avtar">
+                        <div class="m-valign-card">
+                            <div class="mc-avatar">
+                                <a href="#">
+                                    <img width="60" height="60" src="//r.xgimg.net/img/temp/avatar-20x20.png">
+                                </a>
+                            </div>
+                            <div class="mc-content">
+                                <p class="mc-name m-hide">
+                                    <a href="#">Nikete</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-cover">
+                        <div class="item-pic">
+                            <a href=""><img alt="商品描述" src="//r.xgimg.net/img/temp/p-640.png"></a>
+                        </div>
+                        <div class="mask-layer">
+                            <a class="detail-link" href=""></a>
+                            <div class="collect-box">
+                                <a class="c-icon i-folder" href=""></a>
+                                <p class="hightlight">收藏 +<span>1982</span></p>
+                            </div>
+                            <div class="share">
+                                <a class="share-icon i-share-sina" href="javascript:;"></a>
+                                <a class="share-icon i-share-qq" href="javascript:;"></a>
+                                <a class="share-icon i-share-qqz m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-dou m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-ren m-hide" href="javascript:;"></a>
+                                <a class="share-icon i-share-more" href="javascript:;"></a>
+                            </div>
+                            <div class="describe"><a href="">镂空的艺术，UIASS设计师大作推荐</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="loading"><img alt="商品描述" src="//r.xgimg.net/img/xg/loading.gif"></div>
+             </div>
+
+             <!--loading start-->
+
+
+             <!--分页 start-->
+             <div class="m-pagin m-pagin-normal" id="pagin">
+                    <span title="已经是第一页了" class="prev">&lt;</span>
+                    <a href="#">1</a>
+                    <strong class="now">2</strong>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <span class="more">...</span>
+                    <a href="#">100</a>
+                    <a title="下一页" class="next" href="#">&gt;</a>
+                    <p class="skip">到<span class="entry-box"><input type="text" class="entry" name="topage" id="topage"></span>页</p>
+            </div>
+            <!--分页 end-->
+             <a class="go-top" href=""></a>
+
+<!--修改图片收藏夹 弹窗 start-->
+             <div class="popup-inner popup-modify-folder m-hide">
+                <h2 class="hd title-l">修改图片收藏夹</h2>
+                <div class="bd">
+                    <div class="l">
+                        <img alt="商品描述" src="//r.xgimg.net/img/temp/p-230.png">
+                        <p>
+                            <input type="checkbox"> 每次点击<i class="i-collect-xs"></i>，始终出现收藏夹选项
+                        </p>
+                    </div>
+                    <div class="r">
+                        <h3 class="title-s">
+                            我的收藏夹
+                        </h3>
+                        <div class="myfolder">
+                            <ul>
+                                <li><input type="checkbox"><span>女士</span></li>
+                                <li><input type="checkbox"><span class="checked">我的收藏</span></li>
+                                <li><input type="checkbox"><span>女士</span></li>
+                                <li><input type="checkbox"><span>女士</span></li>
+                                <li><input type="checkbox"><span>女士</span></li>
+                                <li><input type="checkbox"><span>女士</span></li>
+                                <li><input type="checkbox"><span>女士</span></li>
+                                <li><input type="checkbox"><span>女士</span></li>
+                                <li><input type="checkbox"><span>女士</span></li>
+                                <li><input type="checkbox"><span>女士</span></li>
+                                <li><input type="checkbox"><span>女士</span></li>
+                            </ul>
+                        </div>
+                        <input type="text" value="输入个不一样的收藏夹" class="m-inp m-inp-def">
+                        <!--<div class="suspect"><a href="">文艺</a><a href="">小清新</a></div>-->
+                        <div class="btn-box"><button class="m-btn btn-ln">完成</button><button class="m-btn btn-gn">不再收藏</button></div>
+                    </div>
+                </div>
+             </div>
+<!--修改图片收藏夹 弹窗 end-->
+        </div>
+    </section>
+    <footer id="ft">
+        <section class="g-mod mod-footer">
+    <div class="inner">
+        <div class="hd"><a class="logo" title="喜瓜" href="#">logo</a>
+            <p>2012 云茂 (中国) 有限公司 版权所有</p>
+        </div>
+        <div class="bd">
+            <dl>
+                <dt>关于云上</dt>
+                <dd><a href="">网站地图</a></dd>
+                <dd><a href="">联系我们</a></dd>
+                <dd><a href="">人才招聘</a></dd>
+            </dl>
+            <dl>
+                <dt>平台合作</dt>
+                <dd><a href="">商务合作</a></dd>
+                <dd><a href="">友情链接</a></dd>
+                <dd><a href="">媒体报道</a></dd>
+            </dl>
+            <dl>
+                <dt>用户服务</dt>
+                <dd><a href="">用户协议</a></dd>
+                <dd><a href="">客户服务</a></dd>
+            </dl>
+            <dl>
+                <dt>应用与工具</dt>
+                <dd><a href="">采集工具</a></dd>
+                <dd><a href="">标签集</a></dd>
+            </dl>
+        </div>
+    </div>
+</section>    </footer>
+</div>
+
+</body>
+<script src="//r.xgimg.net/js/moui/1.0.5/mo.js?combine=true&debug=true&amp;mv=1.0.5&amp;v=788989"></script>
+<script>
+    Mo.require('paging-plugin', function(M){
+
+     var _tpl = "{{=code}}";
+    var _page=M.one("#pagin");
+    var cfg = {
+     type:"ajax",//可选
+        params: {
+          limit: 10,
+          star: 0 //星级筛选级别
+        },
+        url: "paging.json",
+        tpl: _tpl,
+        ctarget: ".main"};
+    var sw = _page.plug([{
+                        fn:M.Plugin.Paging, cfg:cfg
+                    }
+                ]);
+
+    })
+</script>
+</html>

@@ -1,0 +1,171 @@
+<module:layout/ets-wap>
+    <def:content>
+
+<header>
+    <section>
+        <a id="btnGoBack" class="jsback_go">
+            <i class="icon icon-arrow-left"></i>
+        </a>
+        <div>核对订单</div>
+    </section>
+</header>
+<section class="content jscontent">
+    <section>
+        <ul>
+            <li class="jsordercontent jsborderbnone">
+                <section>
+                  <div>芙蓉镇（百子湾店） </div>
+                </section>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <ul>
+            <li class="jsordercontent">
+                <section>
+                    <div>桌号</div>
+                    <input id="txtDeskNo" name="txtDeskNo" type="text" placeholder="填写餐桌号" maxlength="5" />
+                </section>
+            </li>
+             <li class="jsordercontent">
+                <section>
+                    <span class="remark">人数</span>
+                    <input id="txtCustomerCount" name="txtCustomerCount" type="tel" placeholder="请输入就餐人数" maxlength="6" />
+                </section>
+            </li>
+            <li class="jsordercontent">
+                <section>
+                    <span>姓名</span>
+                    <input id="txtRecipient" name="txtRecipient" type="text" placeholder="请输入您的姓名" value="" maxlength="16">
+                    <div class="jsxingbie gender">
+                        <span name="sex" class="bordRLtLb on" data-sex="0">先生</span>
+                        <span name="sex" class="bordRRtRb borderRtNone" data-sex="1">女士</span>
+                    </div>
+                </section>
+            </li>
+            <li class="tel jsordercontent" id="liTelephone" style="display: none">
+                <section>
+                    <span>电话</span>
+                    <input id="txtTelephone" name="txtTelephone" type="tel" placeholder="请输入您的电话" value="18600560636" maxlength="11">
+                    <input id="sendAuthCode" type="button" value="发送验证码" class="yzm jsyzm" />
+                </section>
+            </li>
+            <li class="jsordercontent">
+                <section>
+                    <span class="remark">备注</span>
+                    <input id="txtInstruction" type="text" placeholder="说说您的特殊要求，如口味" maxlength="1000">
+                </section>
+            </li>
+        </ul>
+    </section>
+    <section id="licouponContainer" style="display:none">
+        <ul>
+            <li id="licoupon" class="jsdiscount-li-pre jsjump-ico">
+                <section>
+                    <i class="jsorange "></i>
+                    <div class="jsjump-div-bian">
+                    </div>
+                    <div>
+                        <span>使用其他</span><em class="hdddws"></em>
+                    </div>
+                </section>
+            </li>   
+        </ul>
+    </section>
+    <section>
+        <ul>
+                <li id="lipoints" class="jsborderbnone" style="display: none">
+                    <section>
+<i class="jsorange orange">积</i>
+
+                        <div>剩余积分<span id="memberintegral">0</span>  ，已抵用<span class="jsjifen-num">0</span></div>
+                        <span id="spanUsePoints" class="off-on-new">
+                            <span class="bar-new"></span>
+                            <span class="scales-new"></span>
+                        </span>
+                    </section>
+                </li>
+            <li class="jsordercontent on jsborderbnone">
+                <section>
+                    <div>消费金额 </div>
+                    <span>￥2</span>
+                </section>
+            </li>
+            <li id="points" class="jsordercontent  jsborderbnone" style="display: none">
+                <section>
+                    <div>积分消费</div>
+                    <span>-￥</span> <span id="exchangeAmount">0</span>
+                </section>
+            </li>
+            <li id="couponMoney" data-couponcontenttypecode="money" class="jsordercontent  jsborderbnone" style="display: none">
+                <section>
+                    <div id="couponName"></div>
+                    <span>-￥<i id="discount">0</i></span>
+                </section>
+            </li>
+
+            <li id="couponDish" data-couponcontenttypecode="dish" class="jsborderbnone" style="display: none">
+                <div>赠菜</div>
+            </li>
+            <li class="jsborderbnone total">
+                <section>
+                    <div>总计:<span><span>￥</span><span id="customerTotal">2</span></span></div>
+
+                        <div id="dvGetPoints" style="display: none">
+                            可获<span id="grantPoints">2  </span>积分
+                        </div>
+                </section>
+            </li>
+        </ul>
+    </section>
+    
+<section id="js_pay_method" class="info-payment">
+    <ul id="ulPaymentMethod">
+
+
+            <li class="ordertitle">
+                <section>
+                    <div>支付方式</div>
+                    <p id="zeroOrder" style="display: none" class="ft13 color-e7604a">订单无需支付，可直接提交</p>
+                </section>
+            </li>
+
+
+            <li class="on ordercontent jsordercontent" data-paymentmethodid="12">
+                <section>
+                   <i class="payico alipay"></i>
+                    <div>支付宝<span>（网银）</span></div>
+                    <i class="duihaoico"></i>
+                </section>
+            </li>
+
+
+
+            <li class=" ordercontent jsordercontent" data-paymentmethodid="1">
+                <section>
+                     <i class="payico daifu"></i>
+                    <div>店内付现金</div>
+                    <i class="duihaoico"></i>
+                </section>
+            </li>
+
+            <li class=" ordercontent jsordercontent" data-paymentmethodid="7">
+                <section>
+                     <i class="payico daifu"></i>
+                    <div>店内POS刷卡</div>
+                    <i class="duihaoico"></i>
+                </section>
+            </li>
+    </ul>
+</section>
+<input id="hidCardNumber" name="hidCardNumber" type="hidden" value="" />
+<input id="hidRemainMoney" name="hidRemainMoney" type="hidden" value="0" />
+
+    <div>
+        <div class="button-box">
+            <input id="btnOrderCheckSubmit" type="button" value="提交订单">
+        </div>
+    </div>
+</section>
+	</def>
+</module>

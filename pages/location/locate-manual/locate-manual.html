@@ -1,0 +1,52 @@
+<module:layout/normal>
+    <def:content>
+        <section>
+            <div class="search-box">
+                <i class="m-icon i-search"></i>
+                <input type="text" placeholder="输入您所在的小区、大厦、学校等" data-role="search-input" />
+                <div class="addr-icon  d-none" data-role="locate-close"><i class="m-icon i-close"></i></div>
+            </div>
+        </section>
+        <section data-role="locate">
+            <div class="locate-box">
+                <i class="m-icon i-locate-manual " data-role="icon-locate"></i>
+                <i class="loading  d-none" data-role="icon-loading"></i>
+                <span class="l-text on" data-role="locate-text">定位当前地址</span>
+            </div>
+        </section>
+        <section class="d-none" data-role="history-list">
+            <div class="history-address-box">
+                <ul class="address-list">
+                </ul>
+                <div class="address-close" data-role="history-delete">
+                    清除历史记录
+                </div>
+            </div>
+        </section>
+        <section class="d-none" data-role="search-list">
+            <div class="search-address-box js_search-address-box">
+                <section class="status">
+                    <div class="status-loading d-none">
+                        <i class="loading js_loading"></i>
+                        <span>检索中...</span>
+                    </div>
+                    <div class="status-nodata d-none">
+                        <span>没找到匹配的地址</span>
+                    </div>
+                    <div class="status-error d-none">
+                        <span>连接出错，点击重试</span>
+                    </div>
+                </section>
+                <ul class="address-list">
+                </ul>
+                <div class="address-close" data-role="search-close">
+                    关闭
+                </div>
+            </div>
+             <module:ajaxloading />
+        </section>
+        </def>
+        <def:pagejs>
+            <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&amp;ak=286c3ec71cae58cacfa75d49145ff545"></script>
+            </def>
+            </module>

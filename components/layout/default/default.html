@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <meta name="description" content="易淘食网上订餐，为您提供极致外卖服务，提供外卖，订台，餐饮服务，开始订餐，在线叫外卖以及网上订餐 ，搜索餐饮美食就上易淘食专业网上订餐服务平台。" />
+        <meta name="keywords" content="餐厅订餐，叫外卖，外卖送餐，预订台位，在线订位，订台，店内点菜，自助点菜，远程排队，餐厅排队，排号等，易淘食订餐" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <meta name="360-fullscreen" content="true" /> 
+        <!-- QQ强制竖屏 -->
+        <meta name="x5-orientation" content="portrait">
+        <!-- QQ强制全屏 -->
+        <meta name="x5-fullscreen" content="true">
+        <!-- QQ应用模式 -->
+        <meta name="x5-page-mode" content="app">
+        <!-- UC强制全屏 -->
+        <meta name="full-screen" content="yes">
+        <!-- UC应用模式 -->
+        <meta name="browsermode" content="application">
+        <!-- uc强制竖屏 -->
+        <meta name="screen-orientation" content="portrait">
+        <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+        <link rel="stylesheet" href="{{$g.cdn}}/css/{{theme?(theme+'/'):($g.theme?($g.theme+'/'):'')}}p/{{pageName}}.css?v={{$g.ver}}">
+        
+    </head>
+    <body>
+        <div class="g-wrap">
+            <div class="g-views">
+                <div class="g-main">
+                <point:content />
+                </div>
+            </div>
+        </div>
+    <script src="{{$g.cdn}}/js/mo.1.0.0.js?v={{$g.ver}}"></script>
+    <point:pagejs />
+    <script src="{{$g.cdn}}/js/p/{{pageName}}.js?v={{$g.ver}}"></script>
+    </body>
+</html>

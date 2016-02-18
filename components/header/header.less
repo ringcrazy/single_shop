@@ -1,0 +1,79 @@
+.header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: @headBarHeight;
+    #display .box();
+    #display .box-align(center, justify);
+    #bg .color(@barBgColor);
+    color: @barTxtColor;
+    overflow: hidden;
+    #box .shadow(inset 0 0 2px @barBgColor+(-058));
+    a {
+        #display .inline-block();
+        text-align: center;
+        color: @barTxtColor;
+    }
+    .title {
+        #display .box();
+        #display .box-align(center, center);
+        width: 100%;
+        padding: 0 5rem;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 300;
+        .shop-name {
+            max-width:80%;
+            #text .ellipsis();
+        }
+    }
+    i {
+        color: @barIconColor;
+        font-size: 2.3rem;
+        &.i-restaurant-closed {
+            font-size: 2.5rem;
+            color: #dcdcdc;
+            opacity:.8;
+            margin-left:0.5rem;
+        }
+    }
+    .back {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        .transform(translate(0, -50%));
+        overflow: hidden;
+        text-align: center;
+        z-index: 1;
+        #bg .color(@barBgColor);
+        padding-left: 1rem;
+    }
+    .opc {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 1;
+        .transform(translate(0, -50%));
+        padding-right: 1.25rem;
+        text-align: center;
+        #bg .color(@barBgColor);
+    }
+    &.header-s {
+        background-color: @bgDisColor;
+        #box .shadow(inset 0 0 2px @bgDisColor+(-058));
+        .title,
+        i {
+            color: @txtBaseColor;
+            &.i-restaurant-closed {
+                font-size: 3rem;
+                color: #dcdcdc;
+            }
+        }
+        .back,
+        .opc {
+            #bg .color(@bgDisColor);
+        }
+    }
+}

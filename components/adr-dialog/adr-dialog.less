@@ -1,0 +1,168 @@
+.adr-dailog{
+    position: absolute;
+    top:45%;
+    left:50%;
+    padding-bottom:1.5rem;
+    z-index:999;
+    .transform(translate(-50%,-50%));
+    background-color:@baseMainColor;
+    width:70%;
+    // max-height:60%;
+    #box .radius(5px);
+    overflow: hidden;
+    h3{
+        position:relative;
+        width:100%;
+        height:3rem;
+        line-height:3rem;
+        background-color:@barBgColor;
+        color:@baseMainColor;
+        text-align:center;
+        font-size:1.4rem;
+        .m-icon{
+            position:absolute;
+            top:1rem;
+            right:1rem;
+            font-size:1rem;
+        }
+    }
+    .adr-d-tips{
+        height:2.5rem;
+        line-height:2.5rem;
+        margin-top:1rem;
+        #bg .color(@adrBarColor);
+        text-align:center;
+        color:@txtHightColor;
+        .m-icon{
+            font-size:1.2rem;
+            margin-right:0.5rem;
+        }
+        .i-reload{
+            .animation(rotate 1s infinite ease-in);
+            transform-origin:center center;
+            -webkit-transform-origin:center center;
+            -moz-transform-origin:center center;
+            vertical-align:middle;
+        }
+    }
+    .adr-citys{
+        padding:0 0.5rem 0 1rem;
+        margin-top:1.5rem;
+        margin-bottom:1.5rem;
+         max-height:15rem;
+            overflow:hidden;
+        ul{
+            width:100%;
+           
+        }
+        li{
+            display:inline-block;
+            width:30%;
+            text-align:center;
+            margin-bottom: 1.5rem;
+            &.on{
+                color:@txtHightColor;
+            }
+        }
+    }
+    .adr-btn-box{
+        #display .box();
+        padding:0 1rem;
+        .getbtn(hollow,s,auto);
+        a{
+            width:50%;  
+        }
+        a.btn-hollow-s{
+            #display .flex(1);
+             width:50%; 
+            color:@bgBaseColor;
+            boder:@bgBaseColor;
+            font-size: 1rem;
+        }
+    }
+}
+.adr-mark{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:998;
+    background-color:rgba(0, 0, 0, 0.5);
+    width:100%;
+    height:100%;
+}
+// 自传
+@keyframes rotate
+{
+    0%{
+        .transform(rotate(0deg));       
+    }
+    25%{
+        .transform(rotate(90deg));       
+    }
+    50%{
+        .transform(rotate(180deg));       
+    }
+    75%{
+        .transform(rotate(270deg));       
+    }
+    100%{
+        .transform(rotate(360deg));       
+    }
+}
+
+@-moz-keyframes rotate /* Firefox */
+{
+    0%{
+        .transform(rotate(0deg));       
+    }
+    25%{
+        .transform(rotate(90deg));       
+    }
+    50%{
+        .transform(rotate(180deg));       
+    }
+    75%{
+        .transform(rotate(270deg));       
+    }
+    100%{
+        .transform(rotate(360deg));       
+    }
+}
+
+@-webkit-keyframes rotate /* Safari 和 Chrome */
+{
+    0%{
+        .transform(rotate(0deg));       
+    }
+    25%{
+        .transform(rotate(90deg));       
+    }
+    50%{
+        .transform(rotate(180deg));       
+    }
+    75%{
+        .transform(rotate(270deg));       
+    }
+    100%{
+        .transform(rotate(360deg));       
+    }
+}
+
+@-o-keyframes rotate /* Opera */
+{
+    0%{
+        .transform(rotate(0deg));       
+    }
+    25%{
+        .transform(rotate(90deg));       
+    }
+    50%{
+        .transform(rotate(180deg));       
+    }
+    75%{
+        .transform(rotate(270deg));       
+    }
+    100%{
+        .transform(rotate(360deg));       
+    }
+}

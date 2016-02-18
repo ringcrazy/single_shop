@@ -1,0 +1,87 @@
+<module:layout/ets-wap>
+    <def:content>
+      <header>
+    <section>
+        <a id="btnGoBack">
+            <i class="icon icon-arrow-left"></i>
+        </a>
+        <div>我要付款</div>
+    </section>
+</header>
+<section class="content">
+    <section  class="info-restaurant">
+        <ul>
+            <li class="ordercontent jsordercontent">
+                <section>
+                    <i class="shopico"></i>
+                    <p>
+                        <span>聚网客餐厅</span>
+                    </p>
+                </section>
+            </li>
+
+        </ul>
+    </section>
+
+    <section class="info-money-title">
+        <ul>
+            <li class="ordertitle">
+                <section>
+                    <div>请输入就餐金额:</div>
+                </section>
+            </li>
+        </ul>
+    </section>
+
+    <section  class="info-money">
+        <ul>
+            <li class="ordercontent jsordercontent">
+                <div class="jsjeinput">
+                    <div>￥</div>
+                    <input id="numAmount" type="number" placeholder="0" value="">
+                </div>
+            </li>
+        </ul>
+    </section>
+
+   
+
+    
+<section id="js_pay_method" class="info-payment">
+    <ul id="ulPaymentMethod">
+
+
+            <li class="ordertitle">
+                <section>
+                    <div>支付方式</div>
+                    <p id="zeroOrder" style="display: none" class="ft13 color-e7604a">订单无需支付，可直接提交</p>
+                </section>
+            </li>
+
+
+            <li class="on ordercontent jsordercontent" data-paymentmethodid="12">
+                <section>
+                   <i class="payico alipay"></i>
+                    <div>支付宝<span>（网银）</span></div>
+                    <i class="duihaoico"></i>
+                </section>
+            </li>
+
+
+
+
+
+    </ul>
+</section>
+<input id="hidCardNumber" name="hidCardNumber" type="hidden" value="" />
+<input id="hidRemainMoney" name="hidRemainMoney" type="hidden" value="" />
+
+
+
+    <div class="button-box">
+        <input id="btnSubmit" type="button" value="去付款">
+    </div>
+</section>
+
+        </def>
+        </module>

@@ -1,0 +1,172 @@
+// 版本号
+@version: "0.0.5";
+
+//基本文档设置
+@docFontFamily:roboto,STHeiti,arial,verdana,helvetica,sans-serif;;  //字体
+@docFontSize:@baseFontSize;    								//字号
+@docTxtColor:@txtBaseColor;    								//字色
+@docLineHeight:1.5;											//行高
+@docBg:@bgDisColor + (-5);    									//背景色
+@iconFont:'template-Icons';									//icon字体
+@markColor:@bgEmColor;										//mark背景色
+
+// 字号
+@baseFontSize:62.5%;	 				//字号
+@fontSizeH2:1.8rem;  				//标题一
+@fontSizeH2:1.4rem;  				//标题二
+@fontSizeS:1rem;     				//标题二
+@fontSizeM:1.5rem;     				//标题二
+@fontSizeL:1.6rem;     				//标题二
+
+//基础色
+@baseMainColor:#fff;
+@baseSubColor:#000;
+
+
+//主要文本色
+@txtBaseColor:#333;   		    	//基本文本色
+@txtSubColor:#8c8c8c;   			//次要文本色
+@txtEmColor:#333;   		    	//强调文本色
+@txtHightColor:#ff5a00;   		    //高亮文本色
+@txtSpecialColor:#ff5a00;   		//特殊文本色
+@txtDisColor:#c2c2c2;   			//禁用文本色
+
+
+//主要背景色
+@bgBaseColor:#ff5f45;   			//主要背景色
+@bgSubColor:#fffcdd;   				//次要背景色
+@bgEmColor:#ff5a00;   		    	//强调背景色
+@bgHightColor:#ff5a00;   		    //高亮背景色
+@bgSpecialColor:#f5f8f9;   			//特殊背景色
+@bgDisColor:#fafafa;   				//禁用背景色
+
+
+//主要边框色
+@borderBaseColor:rgba(220,220,220,0.7);   						//基本边框色
+@borderSubColor:rgba(231,231,231,0.7);   						//次要边框色
+@borderHightColor:rgba(225,90,0,0.7);   		    			//高亮边框色
+@borderDisColor:rgba(221,221,221,0.7);   						//禁用边框色
+@borderBaseImg:"~/img/border/border-dcdcdc.png?v=@{version}";	//基本边框图片
+@borderSubImg:"~/img/border/border-e7e7e7.png?v=@{version}";	//次要边框图片
+@borderHightImg:"~/img/border/border-ff5a00.png?v=@{version}";		//高亮边框图片
+@borderDisImg:"~/img/border/border-ddd.png?v=@{version}";	//禁用边框图片
+
+
+
+
+//链接色
+@linkColor:@txtEmColor;					//链接色
+@linkHoverColor:@txtEmColor;			//链接hover色
+
+//input色
+@inputBgcolor:@baseMainColor;			//输入框背景色
+@inputTxtColor:@txtEmColor;				//输入框文本色
+@inputBorderColor:@borderBaseColor;		//输入边框色
+
+@inputBgDiscolor:@bgDisColor;			//输入禁用框背景色
+@inputTxtDisColor:@txtDisColor;			//输入禁用框文本色
+@inputBorderDisColor:@borderSubColor;	//输入禁用边框色
+
+@placeholderColor:@txtSubColor;			//placeholder文本色
+@searchTipColor:@bgBaseColor;  			//搜索联想文本色 
+
+
+//按钮色
+@btnTxtColor:@baseMainColor;					//按钮文本颜色
+@btnBgColor:@bgBaseColor;						//按钮背景颜色
+@btnBorderColor:@borderHightColor;				//按钮边框颜色
+@btnTxtHoverColor:@baseMainColor;				//按钮hover文本颜色
+@btnBgHoverColor:@bgBaseColor;					//按钮hover背景颜色
+@btnBorderHoverColor:@borderHightColor;			//按钮hover边框颜色
+
+//空心按钮色
+@HbtnTxtColor:@txtHightColor;					//按钮文本颜色
+@HbtnBgColor:rgba(0,0,0,0);						//按钮背景颜色
+@HbtnBorderColor:@borderHightColor;				//按钮边框颜色
+@HbtnTxtHoverColor:@baseMainColor;				//按钮hover文本颜色
+@HbtnBgHoverColor:@txtHightColor;				//按钮hover背景颜色
+@HbtnBorderHoverColor:@borderHightColor;			//按钮hover边框颜色
+
+@CbtnTxtColor:@bgBaseColor;					//按钮文本颜色
+@CbtnBgColor:rgba(0,0,0,0);					//按钮背景颜色
+@CbtnBorderColor:@bgBaseColor;				//按钮边框颜色
+@CbtnTxtHoverColor:@baseMainColor;			//按钮hover文本颜色
+@CbtnBgHoverColor:@bgBaseColor;				//按钮hover背景颜色
+@CbtnBorderHoverColor:@bgBaseColor;			//按钮hover边框颜色
+
+@SbtnTxtColor:@bgBaseColor;					//按钮文本颜色
+@SbtnBgColor:rgba(0,0,0,0);					//按钮背景颜色
+@SbtnBorderColor:@bgBaseColor;				//按钮边框颜色
+@SbtnTxtHoverColor:@baseMainColor;			//按钮hover文本颜色
+@SbtnBgHoverColor:@bgBaseColor;				//按钮hover背景颜色
+@SbtnBorderHoverColor:@bgBaseColor;			//按钮hover边框颜色
+
+
+@disbtnTxtColor:@bgDisColor;				//禁用按钮文本颜色
+@disbtnBgColor:@txtDisColor;					//禁用按钮背景颜色
+@disbtnBorderColor:@txtDisColor;				//禁用按钮边框颜色
+
+@subbtnTxtColor:#ffe7e5;				//次要按钮文本颜色
+@subbtnBgColor:#ff5f4f;					//次要按钮背景颜色
+@subbtnBorderColor:#ffe7e5;				//次要按钮边框颜色
+@subbtnTxtHoverColor:#ffe7e5;			//次要按钮hover文本颜色
+@subbtnBgHoverColor:#ffe7e5;			//次要按钮hover背景颜色
+@subbtnBorderHoverColor:#ffe7e5;		//次要按钮hover边框颜色
+
+@spbtnTxtColor:#ffe7e5;					//特殊按钮文本颜色
+@spbtnBgColor:#ff5f4f;					//特殊按钮背景颜色
+@spbtnBorderColor:#ffe7e5;				//特殊按钮边框颜色
+@spbtnTxtHoverColor:#ffe7e5;			//特殊按钮hover文本颜色
+@spbtnBgHoverColor:#ffe7e5;				//特殊按钮hover背景颜色
+@spbtnBorderHoverColor:#ffe7e5;			//特殊按钮hover边框颜色
+
+
+//小标签颜色
+@wmColor:#ff5844;
+@zfColor:#5dc549;
+@tmColor:#3b88e4;
+@dtColor:#00cfad;
+@dcColor:#f7b540;
+@pdColor:#00b0da;
+@jianColor:#f4a005;
+@zheColor:#ff4242;
+@songColor:#ff6631;
+@taobaoColor:#00aaee;
+@baiduColor:#e10602;
+@weixinColor:#5dc549;
+@vipColor:#7860e3;
+@cardColor:#11bbbd;
+
+
+//顶bar
+@headBarHeight:4.4rem;				//header高度
+@barBgColor:@bgBaseColor;			//顶bar背景色
+@barTxtColor:@baseMainColor;		//顶bar文本色
+@barIconColor:@baseMainColor;		//bar icon色
+
+//地址栏
+@adrBarHeight:3.75rem;				//地址栏高度
+@adrBarColor:@bgSubColor;			//地址栏背景色
+@adrTxtColor:@txtEmColor;			//地址栏文本色
+@adrIconColor:@txtHightColor;		//地址栏icon色
+
+
+//点菜页
+@menuNavBgColor:@bgDisColor;			//点菜页左侧nav背景色
+@menuTiBgColor:#eee;			//点菜页左侧nav背景色
+
+//会员中心
+@kingBackg:#ff9c00;    //会员中心头像下王冠标志背景色
+@iconDeep:#666;   //会员中心列表左侧颜色较深icon
+@iconShallow:#d0d0d0;   //会员中心列表右侧颜色较浅icon
+@iconBackg:#ddd;   //会员中心积分icon背景色
+@yueColor:#ff8208;   //会员中心余额橙色文字
+@jifenColor:#009cff;  //会员中心积分蓝色文字
+@redBackg:#ff0000;   //会员中心列表提示红色背景
+
+//账户余额
+@yueBackg:#f5f5f5;   //明细背景颜色
+@iconChong:#ff850e;  //充值橙色icon
+@iconZhi:#999;     //支付灰色icon
+@chongColor:#f0543a;  //充值红色文字   
+@zhiColor:#39b44c; //支付绿色文字

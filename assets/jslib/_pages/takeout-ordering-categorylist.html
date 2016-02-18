@@ -1,0 +1,27 @@
+<ul>
+    {{each categoryList as item index}} 
+		
+		
+
+    	{{if item.selectedDishCount > 0}}
+    		{{if index==0}}
+        		<li data-cid="{{item.categoryId}}" class="active">
+        		<p><span><b>{{item.categoryName}}</b><em class="pubr">{{item.selectedDishCount}}</em></span></p>
+			{{else}}
+    		<li data-cid="{{item.categoryId}}">
+        		<p><span><b>{{item.categoryName}}</b><em class="pubr">{{item.selectedDishCount}}</em></span></p>
+        		{{/if}}	
+        
+		{{else}}
+        {{if index==0}}
+        		<li data-cid="{{item.categoryId}}" class="active">
+        		<p><span><b>{{item.categoryName}}</b><em class="pubr hide"></em></span></p>
+			{{else}}
+    		<li data-cid="{{item.categoryId}}">
+        		<p><span><b>{{item.categoryName}}</b><em class="pubr hide"></em></span></p>
+        		{{/if}}	
+
+
+        {{/if}}
+        {{/each}}
+</ul>

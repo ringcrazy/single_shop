@@ -1,0 +1,57 @@
+.adr-bar{
+    position:fixed;
+    z-index: 99;
+    top:@headBarHeight;
+    #display .box();
+    #display .box-align(center,justify);
+    width:100%;
+    height:@adrBarHeight;
+    padding:0 1.25rem;
+    #bg .color(@adrBarColor);
+    font-size:1.3rem;
+    #box .line(@borderBaseImg,2 stretch,@borderBaseColor,0 0 1px 0);
+    a{
+        display:block;
+        vertical-align:middle;
+    }
+    i{
+        color:@txtHightColor;
+        margin-right:0.3rem;
+        font-size:1.7rem;
+        margin-top:-3px;
+    }
+    // i:before{
+    //  vertical-align:top;
+    // }
+    p{
+        width:70%;
+        height:3rem;
+        line-height:3rem;
+        #text .ellipsis();
+        vertical-align:middle;
+    }
+    .adr-tips{
+        width:100%;
+        display:block;
+        margin:0 auto;
+    }
+    .adr-position{
+        margin-right:1rem;
+    }
+    .adr-position .i-back{
+        .transform(rotate(-90deg));
+        font-size: 1rem;
+        color:@txtBaseColor;
+    }
+}
+.g-main {
+    padding-top:@headBarHeight + @adrBarHeight;
+}
+.menu-main .menu-list .menu-nav{
+    padding-top:@headBarHeight + @adrBarHeight;
+}
+@media only screen and (min-width: 540px){
+    .g-main{
+        margin-top:@headBarHeight + @adrBarHeight +1rem;
+    }
+}

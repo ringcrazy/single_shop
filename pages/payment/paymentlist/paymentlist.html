@@ -1,0 +1,41 @@
+<module:layout/ets-wap>
+    <def:content>
+		<header>
+    <section class="main-bg">
+        <a id="btnGoBack" class="back_go m-bx m-bx-c-m">
+            <i class="icon icon-arrow-left"></i>
+        </a>
+        <div>我的支付</div>
+    </section>
+</header>
+<section class="content m-bx m-bx-ver m-fx-1">
+    <section class="addrbox m-fx-1" id="scrollbox">
+        <div class="inaddrbox">
+            <ul id="dvOrderList">
+            </ul>
+        </div>
+    </section>
+    <section class="empty-orderlist bgfff m-fx-1" id="emptyorderlist" style="display: none">
+        <div class="icobigbox">
+            <div class="pinico pin5"></div>
+            <p></p>
+            <p class="ft16">客官，您还没有订单...</p>
+        </div>
+    </section>
+</section>
+
+<div id="paymentSelect" style="display: none">
+    <div class="payment-money">应付金额：<span id="amount" class="main-ft">￥150.0</span></div>
+</div>
+
+<div id="login" style="display: none">
+    <div class="ml5 pdt10 m-bx">
+    <textarea placeholder='请输入原因，如:"不能按时到店"' class="m-fx-1 block"></textarea>
+</div>
+
+
+
+</div>
+
+	</def>
+</module>

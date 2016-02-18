@@ -1,0 +1,97 @@
+body{
+	background-color:#FAFAFA;
+	font-size:24px;
+}
+
+// 顶部
+.top-bar{
+	background:#fff;
+	height:1.16rem;
+	line-height:1.16rem;
+	font-size:0.386667rem;
+	#display .box();
+	#display .orient(horizontal);
+	padding:0 0.373333rem;
+	font-weight:bold;
+	border-bottom:1px solid #dfdfdf;
+	div{
+		&:first-child{
+			#display .flex(3);
+		}
+		&:last-child{
+			#display .flex(1);
+			text-align:right;
+			color:#c70000;
+		}
+	}
+}
+
+// 内容
+.content{
+	border-top:1px solid #dfdfdf;
+	margin-top:0.293333rem;
+	background-color:#fff;
+	
+	// 支付方式
+	.pay-method{
+		font-size:0.293333rem;
+		padding: 0 0.373333rem;
+		font-weight:bold;
+		p{
+			border-bottom:1px solid #dfdfdf;
+			padding:0.213333rem ;
+		}
+		
+	}
+	// 支付方式列表
+	li{
+		#display .box();
+		#display .orient(horizontal);
+		padding:0.293333rem 0.36rem;
+		border-bottom:1px solid #dfdfdf;
+		.icon{
+			border-radius:0.133333rem;
+			width:1.133333rem;
+			height:1.133333rem;
+			margin-right:0.36rem;
+			overflow:hidden;
+			
+			img{
+				width:100%;
+				height:100%;
+			}
+			i{
+				color:#fff;
+				font-size:1rem;
+			}
+			&.icon-taobao{
+				background-color:#1cabeb;
+				#display .box();
+			#display .box-align(center, end);
+			}
+			&.icon-weixin{
+				background-color:#61c350;
+				#display .box();
+			#display .box-align(center, center);
+			}
+		}
+		.text-wrap{
+			#display .flex(1);
+			.title{
+				font-size:0.4rem;
+				font-weight:bold;
+			}
+			.text{
+				font-size:0.373333rem;
+			}
+		}
+		.arrow-right{
+			width:0.6rem;
+			#display .box();
+			#display .box-align(center, center);
+			i{
+				.transform(rotate(180deg));
+			}
+		}
+	}
+}

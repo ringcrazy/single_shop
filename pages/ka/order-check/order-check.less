@@ -1,0 +1,124 @@
+body {
+    font-size: 24px;
+    background: #F6F6F6;
+}
+
+// 订单号
+.order-num {
+    height: 1.146667rem;
+    background-color: #f0eff7;
+    font-weight: bold;
+    font-size: 0.373333rem;
+    line-height: 1.146667rem;
+    padding-left: 0.373333rem;
+    span {
+        margin-left: 0.266667rem;
+    }
+    border-bottom:1px solid #dbdbdb;
+}
+
+// 订单信息
+.order-wrap {
+	&.finish{
+		color:#868686;
+		.order-serial{
+			background-color:#e9e8f0;
+		}
+	}
+    background-color: #fff;
+    margin-top: 0.28rem;
+    border-top: 1px solid #dbdbdb;
+    .order-status {
+        height: 1.066667rem;
+        text-align: center;
+        line-height: 1.066667rem;
+        font-weight: bold;
+        font-size: 0.413333rem;
+        i{
+        	&.i-unpay{
+        		color:#d2130e;
+        	}
+        	&.i-pay{
+        		color:#5dc54a;
+        	}
+        	
+        }
+    }
+    .order-serial {
+        height: 0.64rem;
+        background-color: #e9e8f0;
+        line-height: 0.64rem;
+        padding: 0 0.373333rem;
+        #display .box();
+        #display .orient(horizontal);
+        span{
+        	display:block;
+        	#display .flex(1);
+        	&:last-child{
+        		text-align:right;
+        	}
+        }
+    }
+    .preference {
+        font-size: 0.373333rem;
+        padding: 0.36rem 0.36rem 0 0.36rem;
+        color: #d2130e;
+        i{
+        	color:#d2130e;
+        }
+    }
+    .order-list {
+        font-size: 0.373333rem;
+        li {
+            #display .box();
+            #display .orient(horizontal);
+            padding: 0.373333rem;
+            .name {
+                #display .flex(3);
+                width: 40%;
+            }
+            .num {
+                #display .flex(1);
+                text-align: center;
+            }
+            .price {
+                #display .flex(1);
+                text-align: right;
+            }
+        }
+    }
+}
+
+// 底部
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    height: 1.346667rem;
+    #display .box();
+    #display .orient(horizontal);
+    width: 100%;
+    background-color:#333333;
+    .pay-money {
+    	color:#fff;
+        #display .flex(3);
+        width: 60%;
+        height: 100%;
+        vertical-align: middle;
+        padding-left: 1rem;
+        line-height: 1.346667rem;
+        b,span{
+        	color:#ffcd00;
+        }
+        font-size:0.4rem;
+
+    }
+    .pay-button {
+        #display .flex(2);
+        text-align: center;
+        line-height: 1.346667rem;
+        background-color:#ffcd00;
+        padding:0 0.8rem;
+        color:#000;
+        font-size: 0.48rem;
+    }
+}

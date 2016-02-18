@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <title>button</title>
+    </head>
+
+    <body>
+        <button id="aa">这是一个button</button>
+
+        <script src="http://r.xgimg.net/js/moui/1.0.5/mo.js?combine=true&debug=true&amp;mv=1.0.5&amp;v=788989"></script>
+        <script>
+            Mo.require('button-plugin', function(M) {
+                var button = M.one('button');
+                var demo = button.plug(M.Plugin.Button, {
+                    type: 'light', //light,gray 不配置默认 light
+                    size: 'normal' //normal,small 不配置默认 normal
+                }).on('mousedown',function(e){
+                    //debugger;
+                }).button.on('click',function(e){
+                    debugger;
+                });
+            });
+        </script>
+    </body>
+</html>

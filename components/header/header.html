@@ -1,0 +1,15 @@
+<header class="header {{if sbg}}header-s{{/if}}">
+    <a href="#" class="back"><i class="m-icon i-back"></i></a>
+    <div class="title">
+        <div class="shop-name">
+            {{title}}
+        </div>
+        {{if restaurant_closed}}
+            <i class="m-icon i-restaurant-closed"></i>      
+        {{/if}}
+    </div>
+    <a href="#" class="opc">
+        <i class="m-icon {{if shop}}i-shop{{/if}} {{if home}}i-home{{/if}}{{if question}}i-circle-question{{/if}} {{if locate_map}}i-locate-map{{/if}}
+        "></i>
+    </a>
+</header>

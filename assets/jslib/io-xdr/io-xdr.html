@@ -1,0 +1,45 @@
+<!DOCTYPE>
+
+<html>
+<head>
+    <title>MoUI - io-xdr</title>
+    <meta charset="utf-8" />
+
+    <!--[if lt IE 9]>
+<script src="//r.xgimg.net/js/vendor/html5.js?v=1.0.5"></script>
+<![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="//r.xgimg.net/img/shortcuticon.png&amp;v=1.0.5" />
+<link rel="stylesheet" href="//r.xgimg.net/~?f=usage/xg/detail&amp;v=1.0.5" />
+    </head>
+<body>
+<button data-role="aaa">提交</button>
+</body>
+<script src="//r.xgimg.net/js/moui/1.0.5/mo.js?combine=true&debug=true&amp;mv=1.0.5&amp;v=100005"></script>
+<script>
+    Mo.require('button-plugin,io-xdr', function(M){
+
+       M.role("aaa").plug(M.Plugin.Button, {
+        type : 'light', //light,gray 不配置默认 light
+        size : 'normal' //normal,small 不配置默认 normal
+       }).button.on("click", function () {
+        debugger
+        M.io.Xdr({
+            url : "test.json",
+            method : "post",
+            success:function(data){
+              var _data=M.JSON.parse(data);
+              if(_data.error_code==0){
+                alert(_data.msg)
+              }
+            },
+            failure:function(o){
+
+            }
+        });
+       })
+
+
+
+    })
+</script>
+</html>

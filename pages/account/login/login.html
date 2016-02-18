@@ -1,0 +1,70 @@
+<module:layout/ets-wap>
+    <def:content>
+		<header>
+    <section class="main-bg">
+        <a></a>
+        <div>用户登录</div>
+    </section>
+</header>
+<section class="content">
+    <section class="login-method conOrderhead main-bg m-bx m-bx-m ft14" id="loginType">
+        <a value="2" class="on">手机登录</a>
+        <a value="0">账号登录</a>
+    </section>
+    <section class="login-info ffbg select-radio" id="loginContent">
+        <ul class="menucontent border-bottom ffbg">
+    <li class="ordercontent" id="addressManage">
+        <p class="m-bx m-bx-m pdy11">
+            <input type="tel" id="userName" placeholder="输入手机号" class="m-fx-1 block m-fx-1 pdl_5" maxlength="11">
+            <input type="button" value="发送验证码" id="sendAuthCode" class="yzm aux-bg block" disabled="disabled">
+        </p>
+    </li>
+    <li class="ordercontent borderbnone">
+        <p class="m-bx m-bx-m pdy19">
+            <input type="tel" id="password" placeholder="输入验证码" class="m-fx-1 block pdl_5" maxlength="6">
+            <span class="sbdyzm" tel="">收不到验证码？</span>
+        </p>
+    </li>
+</ul>
+
+<div id="login" style="display: none">
+    <div class="pdx5">
+        <div class="m-bx m-bx-m">
+            <input type="tel" id="userTelephone" placeholder="请输入您的注册手机号" class="m-fx-1 block texbox" maxlength="11">
+        </div>
+        <div class="ft-hui ft12 textcenter pdt10">我们会致电该手机号,告知验证码</div>
+    </div>
+</div>
+
+<div class="button-box m-bx-ver pdb10">
+    <input id="btnLogin" type="button" value="登 录" class="main-bg">
+</div>
+
+<input id="hidSendAuthCodeUrl" name="hidSendAuthCodeUrl" type="hidden" value="/Sms/SendAuthCode?authCodeType=1" />
+<input id="hidSendVoiceCodeUrl" name="hidSendVoiceCodeUrl" type="hidden" value="/Sms/SendAuthCode?authCodeType=1&amp;channle=5" />
+    </section>
+    <div class="ets-login">
+        <div class="linka m-fx-1"><span id="register" style="display: none;">注册</span></div>
+    </div>
+</section>
+
+
+
+
+    
+    <nav class="nav"  id="bottomMeun">
+    <a id="btnGoHome" class="index  m-bx m-bx-ver m-bx-c-m m-fx-1">
+        <i class="home-page"></i>
+        <div>首页</div>
+    </a>
+    <a href="/User/MyOrder" class="order m-bx m-bx-ver m-bx-c-m m-fx-1">
+        <i class="order"></i>
+        <div>订单</div>
+    </a>
+    <a href="/User" class="my on m-bx m-bx-ver m-bx-c-m m-fx-1">
+        <i class="user"></i>
+        <div>我的</div>
+    </a>
+</nav>
+    </def>
+</module>

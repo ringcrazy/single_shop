@@ -1,0 +1,38 @@
+.header{
+	#display .box();
+	#display .orient(horizontal);
+	height:1.0rem;
+	line-height:1.0rem;
+	position:relative;
+	background:#000;
+	color:#fff;
+	.back{
+		position:absolute;
+		top:0;
+		left:0;
+		#display .box();
+		#display .box-align(center, center);
+		font-size:0.48rem;
+		font-weight:bold;
+		color:#fff;
+
+		text-decoration:none;
+		margin-left:0.24rem;
+		span{
+			font-weight:normal;
+			font-size:0.36rem;
+		}
+	}
+	.title{
+		font-size:0.36rem;
+		text-align:center;
+		width:6.0rem;
+		margin:0 auto;
+		#text .ellipsis();
+	}
+	.info{
+		position:absolute;
+		top:0;
+		right:0;
+	}
+}

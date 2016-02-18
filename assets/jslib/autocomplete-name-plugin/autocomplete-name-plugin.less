@@ -1,0 +1,34 @@
+@import "lib/element/classes";
+
+.autocomplete-name{
+	width: 163px;
+	padding: 5px;
+	border:1px solid #cecece;
+	background: #fff;
+	box-shadow(0 -1px 1px #cecece inset,0 2px 1px rgba(0,0,0,0.1)); 
+	$border radius(3px);
+	z-index: 10003;
+	a{
+		font-size: 14px;
+		color: #303030;
+	}
+	li{
+		height: 40px;
+		line-height: 40px;
+		padding: 0 5px;
+		&:hover{
+			background: #dadada;
+			$border radius(3px);
+		}
+	}
+	.opt-active{
+		background: #dadada;
+		$border radius(3px);
+	}
+	.ac-avatar{
+		vertical-align: middle;
+		margin-right: 5px;
+		width:30px;
+		height: 30px;
+	}
+}

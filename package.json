@@ -1,0 +1,37 @@
+{
+    "name": "astro-example",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "dependencies": {
+        "async":"^1.5.0",
+        "file-plus":">0.0.2",
+        "lang-utils":"^0.0.2",
+        "console-prettify":"^0.0.2",
+        "astros": ">=0.0.5",
+        "astros-2ximg": ">=0.0.6",
+        "astros-asset-parse": ">=0.0.1",
+        "astros-webcom-refer": ">=0.0.4",
+        "astros-css-less": ">=0.0.4",
+        "astros-css-sprite": ">=0.0.2",
+        "astros-img-interlace": ">=0.0.3",
+        "astros-js-dep": ">=0.0.2",
+        "astros-js-minify": ">=0.0.3",
+        "astros-js-process": ">=0.0.4",
+        "astros-js-tpl": ">=0.0.2",
+        "astros-resource-refer": ">=0.0.2",
+        "pandorajs": ">=0.0.8",
+        "pandora-proxy": ">=0.0.3",
+        "et-astros-theme-variable":">=0.0.1",
+        "et-astros-theme":">=0.0.1",
+        "et-astros-theme-relpath":">=0.0.1"
+    },
+    "optionalDependencies": {
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "lemonabc",
+    "license": "ISC"
+}

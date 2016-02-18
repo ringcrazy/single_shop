@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>json-parse</title>
+    <meta charset="utf-8" /></head>
+
+<body>
+
+<pre>
+    Mo.require(['json-parse','json-stringify'], function(M){
+            var data.json = "{\"name\":\"saven\",\"age\":30,\"say\":\"窈窕淑女君子好逑。。。\"}";
+        var _obj=JSON.parse(data.json);
+        alert("姓名:"+_obj.name+"\n年龄："+_obj.age+"\n说:"+_obj.say)
+    })
+</pre>
+
+</body>
+<script src="http://r.xgimg.net/js/moui/1.0.5/mo.js?combine=true&debug=true&amp;mv=1.0.5&amp;v=12889891111111111111"></script>
+<script>
+    Mo.require('json-parse', function(M){
+            var data ="{\"name\":\"saven\",\"age\":30,\"say\":\"窈窕淑女君子好逑。。。\",\"publishDate\":\"2013-06-28 10:26:12\"}";
+        var _obj=M.JSON.parse(data);
+        alert("姓名:"+_obj.name+"\n\n年龄："+_obj.age+"\n\n说:"+_obj.say+"\n\n于:"+_obj.publishDate+"发表.");
+
+            var data = {name:"saven",age:"30",dep:"产品部-前端",qq:"34334196"};
+        var _objstr=M.JSON.stringify(data);
+
+        alert(_objstr)
+    })
+</script>
+</html>

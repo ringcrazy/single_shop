@@ -1,0 +1,22 @@
+<div data-cid="{{categoryId}}" class="c-foods active">
+    <h3 class="ul-title">{{categoryName}}</h3>
+    <ul class="foods-lst">
+    	{{each dishlist as item}}
+        <li class="foods-items" data-cid="{{categoryId}}" data-fid="{{item.dishId}}" data-des="{{item.dishDescription}}">
+            <a href="javascript:" class="foods-inner">
+                <div class="foods-img"><img src="/Content/images/150X150.png" alt="" data-src="{{item.imagePath}}"></div>
+                <div class="foods-info">
+                    <h4><b>{{item.dishName}}</b></h4>
+                    <span class="f-price"><b>￥</b>{{item.Price}}</span>
+                </div>
+            </a>
+            <div class="f-numb">
+                <a class="m-icon i-minus"></a>
+                <em>{{item.Count}}</em>
+                <a class="m-icon i-plus"></a>
+            </div>
+        </li>
+        {{/each}}
+        
+    </ul>
+</div>

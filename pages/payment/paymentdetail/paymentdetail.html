@@ -1,0 +1,81 @@
+<module:layout/ets-wap>
+    <def:content>
+        <header>
+            <section class="main-bg">
+                <a id="btnGoBack" class="back_go m-bx m-bx-c-m">
+                    <i class="icon icon-arrow-left"></i>
+                </a>
+                <div>付款详情</div>
+            </section>
+        </header>
+        <section class="payContent">
+            <section class="ffbg">
+                <ul class="menucontent border-bottom">
+                    <li class="pdx7 ordercontent">
+                        <section class="m-bx m-bx-m">
+                            <i class="shopico"></i>
+                            <p class="m-bx m-bx-m m-fx-1 ml10">
+                                <span class="m-fx-1 block mr7">聚网客测试 </span>
+                            </p>
+                        </section>
+                    </li>
+                    <li class="ordercontent pdx7">
+                        <section class="m-bx m-bx-m">
+                            <a href="tel:4000999177,010556897" class="m-bx m-bx-m">
+                                <i class="icoDc phone"></i>
+                                <div class="m-fx-1 ml10">4000999177,010556897</div>
+                            </a>
+                        </section>
+                    </li>
+                    <li class="pdx7 ordercontent">
+                        <section class="m-bx m-bx-m">
+                            <div class="m-bx m-fx-1">
+                                <div>付款金额：</div>
+                                <div class="m-fx-1 main-ft ft18">￥0.1</div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="pdx7 ordercontent">
+                        <section class="m-bx m-bx-m">
+                            <div class="m-bx m-fx-1">
+                                <div>订单编号：</div>
+                                <div class="m-fx-1">4000768451</div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="pdx7 ordercontent pay-method">
+                        <section class="m-bx m-bx-m">
+                            <div class="m-bx m-fx-1">
+                                <div>支付方式：</div>
+                                <div class="m-fx-1">支付宝付款</div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="pdx7 ordercontent borderbnone pay-time">
+                        <section class="m-bx m-bx-m">
+                            <div class="m-bx m-fx-1">
+                                <div class="m-fx-1 ft-hui">2015-12-16</div>
+                                <div>
+                                    <span id="btnToPay" class="icobtns paybtn">支付</span>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <div id="paymentSelect" style="display: none">
+            <div class="payment-money">应付金额：<span id="amount" class="main-ft">￥0.1</span></div>
+            <section id="js_pay_method" class="info-payment">
+                <ul id="ulPaymentMethod">
+                    <li class="on ordercontent jsordercontent" data-paymentmethodid="12">
+                        <section>
+                            <i class="payico alipay"></i>
+                            <div>支付宝<span>（网银）</span></div>
+                            <i class="duihaoico"></i>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+            </def>
+            </module>

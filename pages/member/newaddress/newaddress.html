@@ -1,0 +1,54 @@
+ <module:layout/ets-wap>
+    <def:content>
+ <header>
+        <section class="main-bg">
+            
+            <a id="btnGoBack" class="back_go m-bx m-bx-c-m">
+                <i class="icon icon-arrow-left"></i>
+            </a>
+            <div>新增送餐地址</div>
+            <a id="saveAddress" class="headright m-bx m-bx-m">
+                <div class="ft15 savebtn">保存</div>
+            </a>
+        </section>
+    </header>
+    <section class="content">
+        
+        <div class="areabox bgfff">
+            <ul class="menucontent">
+                <li class="ordercontent mgx00">
+                    <section class="m-bx m-bx-m">
+                        <span class="block">姓名&nbsp;&nbsp;</span>
+                        <input id="name" type="text" placeholder="您的姓名" class="m-fx-1 block" value="" maxlength="10">
+                        <div class="xingbie m-bx gender">
+                            <span name="sex" class="bordRLtLb on" data-sex="0">先生</span>
+                            <span name="sex" class="bordRRtRb borderRtNone" data-sex="1">女士</span>
+                        </div>
+                    </section>
+                </li>
+                <li class="ordercontent mgx00">
+                    <section class="m-bx m-bx-m pdy10">
+                        <span class="pdl_5 ft15 block">电话&nbsp;&nbsp;</span>
+                        <input id="telephone" type="tel" placeholder="您的电话" class="m-fx-1 block" value="18600560636" maxlength="11">
+                    </section>
+                </li>
+                <li class="ordercontent mgx00">
+                    <section class="m-bx m-bx-m pdx4">
+                        <select id="ddlCity" class="m-fx-1">
+                            <option value="3" selected="selected">哈尔滨</option>
+                        </select>
+                        <select id="ddlArea" class="m-fx-1">
+                        </select>
+                    </section>
+                </li>
+                <li class="ordercontent mgx00 borderbnone">
+                    <section class="m-bx m-bx-m bordernone pdy10">
+                        <span class="pdl_5 ft15 block">地址&nbsp;&nbsp;</span>
+                        <input id="addressDetail" type="text" placeholder="请输入详细信息,如xx大楼xx室" class="m-fx-1 block" value="" maxlength="50">
+                    </section>
+                </li>
+            </ul>
+        </div>
+    </section>
+</def>
+</module>

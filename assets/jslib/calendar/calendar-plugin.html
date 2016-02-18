@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <title>日历</title>
+    <meta charset="utf-8" /></head>
+<link rel="stylesheet" href="//r.krss.cn/~?f=usage/xg/refund-info&amp;v=1.0.5" /><body>
+
+    <div id="form1" style="margin:0 auto; width: 400px">
+        <br/><br/><br/><br/>
+        <legend>日历</legend>
+        <div id="calendar"></div>
+        <p>单日历</p>
+        <input type="text" id="input" />
+        <br><br>
+        <p>范围日历</p>
+        <input type="text" id="input1" />
+        <input type="text" id="input2" />
+    </div>
+
+    <div id="form2">
+         <legend>表单2</legend>
+       <form data-role="form2">
+
+        </form>
+    </div>
+
+</body>
+<script src="http://r.krss.cn/js/moui/mo.1.0.5.js?mv=1.0.5&v=0.0.0.1"></script>
+
+
+<script>
+    Mo.require('calendar', function(M){
+
+        /** 单日历
+
+
+        */
+        var SingleCalendar = new M.Calendar({
+            target: M.one('#input')
+        });
+
+
+        /** 范围日历
+
+
+        */
+        var RangeCalendar = new M.Calendar({
+            rangeTarget: [M.one('#input1'), M.one('#input2')],
+            monthSpan: 2
+        });
+
+
+    });
+</script>
+</html>

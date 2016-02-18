@@ -1,0 +1,80 @@
+@import "lib/element/classes";
+.default-tip-default,
+.default-tip-loading{
+    display:block;
+    padding-top:7px;
+    font-size:12px;
+
+}
+.default-tip-default,
+.default-tip-loading{
+    .m-icon{
+        display:none;
+    }
+}
+.default-tip-err{
+    display:block;
+    color:#838383;
+    padding-top:7px;
+    font-size:12px;
+    .m-icon{
+        background-position:-87px -94px;
+        margin-right:10px;
+        vertical-align: -3px;
+    }
+
+}
+.default-tip-ok{
+    display:block;
+    .m-icon{
+        display:none
+    }
+
+}
+.rich-default{
+    padding-left:5px;
+    .m-icon{
+        display:none;
+    }
+}
+.rich-err{
+    color:#838383;
+    font-size:12px;
+    padding-left:5px;
+    .m-icon{
+        background-position:-87px -94px;
+        margin-right:10px;
+        vertical-align: -3px;
+    }
+}
+.rich-ok{
+    padding-left:5px;
+    .m-icon{
+        background-position:-13px -94px;
+        margin-right:10px;
+        vertical-align: -3px;
+    }
+}
+.rich-loading{
+    padding-left:10px;
+    .m-icon{
+        $background img("xg/loading-n.gif");
+        margin-right:5px;
+        width:20px;
+        height:20px;
+    }
+}
+.m-btn-hasloading{
+    position:relative;
+    .m-icon{
+        $background img("xg/loading-n.gif");
+        position:absolute;
+        top:30%;
+        left:-25px;
+        width:20px;
+        height:20px;
+    }
+}
+.fv-iknown{
+    margin-left:20px;
+}

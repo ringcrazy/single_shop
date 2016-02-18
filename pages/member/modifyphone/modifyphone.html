@@ -1,0 +1,49 @@
+<module:layout/ets-wap>
+    <def:content>
+    	<header>
+    <section class="main-bg">
+        <a id="btnGoBack">
+            <i class="icon icon-arrow-left"></i>
+        </a>
+        <h1>更改绑定手机号</h1>
+    </section>
+</header>
+<form>
+    <section class="content">
+        <ul class="menucontent border-bottom border-top">
+            <li class="ordercontent pdx7 ">
+                <p class="m-bx m-bx-m">
+                    <span class="pdr07">原手机号</span>
+                    <input type="tel" value="18600560636" class="m-fx-1 block m-fx-1 tel-number" readonly="readonly" />
+                </p>
+            </li>
+            <li class="ordercontent pdx7 ">
+                <p class="m-bx m-bx-m">
+                    <span class="pdr07">新手机号</span>
+                    <input type="tel" name="newPhoneNumber" placeholder="请输入新号码" class="m-fx-1 block m-fx-1 tel-number" id="telephone">
+                    <input type="button" id="sendAuthCode" value="发送验证码" class="yzm aux-bg block" disabled="disabled" />
+                </p>
+            </li>
+            <li class="ordercontent borderbnone pdy19 pdx7">
+                <p class="m-bx m-bx-m ">
+                    <span class="pdr07">验证码</span>
+                    <input type="number" name="validateCode" placeholder="请输入新手机号收到的验证码" class="m-fx-1 block" maxlength="6" />
+                    <span class="sbdyzm">收不到验证码？</span>
+                </p>
+            </li>
+        </ul>
+    </section>
+</form>
+<div id="login" style="display: none">
+    <div class="pdx5">
+        <div class="m-bx m-bx-m">
+            <input type="tel" id="userTelephone" placeholder="请输入您的注册手机号" class="m-fx-1 block texbox" maxlength="11">
+        </div>
+        <div class="ft-hui ft12 textcenter pdt10">我们会致电该手机号,告知验证码</div>
+    </div>
+</div>
+<div class="button-box">
+    <input type="button" value="确定修改" id="btn_save_mobile" />
+</div>
+	</def>
+</module>

@@ -1,0 +1,133 @@
+<module:layout/astro>
+    <h1 class="title"><img src="$res(astro.png)" alt="">项目前端产出物</h1>
+    <div class="tips">
+        <p>单店H5站点简单描述：</p>
+        <!-- <p>PRD: http://10.8.10.10/doc/moto/</p>
+        <p>交互: http://10.8.10.10/doc/moto/23we</p> -->
+        <p>产品经理: 尚尉</p>
+        <p>前端负责人: 苏宁</p>
+        <p>后端负责人:张保坤、苏建峰</p>
+    </div>
+    {{each list as item}}
+    <table>
+    <colgroup>
+        <col align="left" width="3%" />
+        <col align="left" width="20%" />
+        <col align="right" indexwidth="77%" />
+    </colgroup>
+        <tr class="thd">
+            <th><i class="fa"></i></th>
+            <th><h3>{{item.title[0]}}</h3></th>
+            <th>
+                <ul class="opc">
+                    <li data-role="person-list">
+                        <a href="#"><i class="fa"></i>人员列表</a>
+                        <div class="members" style="display:none">
+                            <p>
+                                <span class="ui">UI</span>
+                                {{each item.ui as name}}
+                                    <em>{{name}}</em>
+                                {{/each}}
+                            </p>
+                            <p>
+                                <span class="ux">UX</span>
+                                {{each item.ux as name}}
+                                    <em>{{name}}</em>
+                                {{/each}}
+                            </p>
+                            <p>
+                                <span class="wd">Wd</span>
+                                {{each item.wd as name}}
+                                    <em>{{name}}</em>
+                                {{/each}}
+                            </p>
+                        </div>
+                    </li>
+                    <li><a href="#" data-url="{{item.url}}" data-role="view-code"><i class="fa"></i>查看源代码</a></li>
+                    <li data-role="time">
+                        <a href="#"><i class="fa"></i>更新时间</a>
+                        <div class="updata" style="display:none">
+                            <p>
+                                创建时间
+                                <span class="first">{{item.ctime[0]}}</span>
+                            </p>
+                            <!-- <p>
+                                最后更新
+                                <span class="last">2015-09-24 21:30:25</span>
+                            </p> -->
+                        </div>
+                    </li>
+                </ul>
+            </th>
+        </tr>
+        <tr>
+            <td></td>
+            <td><i class="fa green"></i>前端预览</td>
+            <td>
+                <span class="page-type"> 
+                    <a href="#"><b class="orange"></b></a>
+                    <a href="{{item.url}}"><i class="fa"></i></a>
+                    <a href="#" data-role="qrcode" data-url="{{item.url}}" data-color="orange"><i class="fa"></i>
+                        <em class="code" style="display:none"></em>
+                    </a>
+                </span>
+                <span class="page-type"> 
+                    <a href="#"><b class="blue"></b></a>
+                    <a href="{{item.url}}?theme=blue"><i class="fa"></i></a>
+                    <a href="#" data-role="qrcode" data-url="{{item.url}}?theme=blue" data-color="blue"><i class="fa"></i>
+                        <em class="code" style="display:none"></em>
+                    </a>
+                </span>
+                <span class="page-type"> 
+                    <a href="#"><b class="gray"></b></a>
+                    <a href="{{item.url}}?theme=gray"><i class="fa"></i></a>
+                    <a href="#" data-role="qrcode" data-url="{{item.url}}?theme=gray" data-color="gray"><i class="fa"></i>
+                        <em class="code" style="display:none"></em>
+                    </a>
+                </span>
+                <span class="page-type"> 
+                    <a href="#"><b class="gold"></b></a>
+                    <a href="{{item.url}}?theme=gold"><i class="fa"></i></a>
+                    <a href="#" data-role="qrcode" data-url="{{item.url}}?theme=gold" data-color="gold"><i class="fa"></i>
+                        <em class="code" style="display:none"></em>
+                    </a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><i class="fa green"></i>测试环境</td>
+            <td>
+                <span class="page-type"> 
+                    <!-- <a href="#"><b class="blue"></b></a> -->
+                    <a href="#"><i class="fa"></i></a>
+                    <a href="#"><i class="fa"></i>
+                        <em class="code" style="display:none"><img isrc="code.jpg" alt=""></em>
+                    </a>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><i class="fa green"></i>线上</td>
+            <td>
+                <span class="page-type"> 
+                    <!-- <a href="#"><b class="blue"></b></a> -->
+                    <a href="#"><i class="fa"></i></a>
+                    <a href="#"><i class="fa"></i>
+                        <em class="code" style="display:none"><img isrc="code.jpg" alt=""></em>
+                    </a>
+                </span>
+            </td>
+        </tr>
+    </table>
+    {{/each}}
+    <div class="dialog" style="display:none">
+        <a href="#" class="closed"><i class="fa fa-close"></i></a>
+        <h3>源码</h3>
+        <textarea class="d-content">
+            kiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱ukiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱ukiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱ukiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱ukiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱ukiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱u
+            kiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱ukiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱ukiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱ukiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱ukiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱ukiha;dhahjf;aj;foja;fja;jf;ajfl;ajkhasklnhalhflahfilalhklanfklhailfshlj,m,m contentmndvvn/zkzjl.afklhakfnsanfkkfhksha;fah阿克江发达恢复了哈阿里和减肥了卡回复了卡回复拉黑还是困hi啊啊啊可好卡了和法律和阿里安徽老虎覅飞  老客户爱u
+        </textarea>
+    </div>
+</module>

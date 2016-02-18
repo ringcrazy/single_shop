@@ -1,0 +1,30 @@
+.header-koubei{
+	position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 40px;
+    #display .box();
+    #display .orient(horizontal);
+	#display .box-align(center, center);
+	 #box .shadow(inset 0 0 2px  #fafafa+(-058));
+    background-color: #fafafa;
+    div{
+		#display .flex(1);	
+		text-align: center;
+		height:40px;
+		line-height: 40px;
+		&.active{
+			color:#ff5a00;
+			p{
+				border-bottom:2px solid #ff5a00;
+			}
+		}
+		p{
+			width:60%;
+			margin:0 auto;
+			font-size: 14px;
+		}
+    }
+}

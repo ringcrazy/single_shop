@@ -1,0 +1,75 @@
+.loading{
+    // background-color:#fafafa;
+    text-align:center;
+    padding:0.5rem 0;
+    font-size:1.3rem;
+    vertical-align:middle;
+    span{
+        display:inline-block;
+        width:1.4rem;
+        vertical-align:middle;
+        margin-right:0.5rem;
+        img{
+            width:100%;
+            margin-top:2px;
+            transform-origin:center center;
+            .animation(rotate 1s linear infinite);
+        }
+    }
+}
+//旋转
+@-webkit-keyframes 'rotate'{
+    0% {
+        -webkit-transform:rotate(0deg);
+    }
+    50% {
+        -webkit-transform:rotate(180deg);
+    }
+    100% {
+        -webkit-transform:rotate(360deg);
+    }
+}
+@-moz-keyframes 'rotate'{
+    0% {
+        -moz-transform:rotate(0deg);
+    }
+    50% {
+        -moz-transform:rotate(180deg);
+    }
+    100% {
+        -moz-transform:rotate(360deg);
+    }
+}
+@-ms-keyframes rotate{
+    0% {
+        -ms-transform:rotate(0deg);
+    }
+    50% {
+        -ms-transform:rotate(180deg);
+    }
+    100% {
+        -ms-transform:rotate(360deg);
+    }
+}
+@-o-keyframes rotate{
+    0% {
+      -o-transform:rotate(0deg);
+    }
+    50% {
+      -o-transform:rotate(180deg);
+    }
+    100% {
+      -o-transform:rotate(360deg);
+    }
+}
+@keyframes 'rotate'{
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(180deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}

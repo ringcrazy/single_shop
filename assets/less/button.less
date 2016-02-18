@@ -1,0 +1,101 @@
+@import "lib/element";
+#form .btnbase();
+.getbtn(@selector:define,@size:n,@btnWidth:100%){
+	.selector(@selector) when(@selector = define ){
+		@bgColor:@btnBgColor;  //按钮背景颜色
+		@fontColor:@btnTxtColor;  //按钮字体颜色
+		@borderC:@btnBorderColor; //按钮边线颜色
+		@bgHoverColor:@btnBgHoverColor;  //按钮背景颜色
+		@fontHoverColor:@btnTxtHoverColor;  //按钮字体颜色
+		@borderHoverC:@btnBorderHoverColor; //按钮边线颜色
+		@boxShadow:0; //按钮阴影 不需要写0
+		@txtShadow:0;  //字体阴影 不需要写0
+		@linear:0;     //按钮渐变背景 传参时加'',不需要写0
+	}
+	.selector(@selector) when(@selector = cancel){
+		@bgColor:@CbtnBgColor;  //按钮背景颜色
+		@fontColor:@CbtnTxtColor;  //按钮字体颜色
+		@borderC:@CbtnBorderColor; //按钮边线颜色
+		@bgHoverColor:@CbtnBgHoverColor;  //按钮背景颜色
+		@fontHoverColor:@CbtnTxtHoverColor;  //按钮字体颜色
+		@borderHoverC:@CbtnBorderHoverColor; //按钮边线颜色
+		@boxShadow:0; //按钮阴影 不需要写0
+		@txtShadow:0;  //字体阴影 不需要写0
+		@linear:0;     //按钮渐变背景 传参时加'',不需要写0
+	
+	}
+	.selector(@selector) when(@selector = send){
+		@bgColor:@SbtnBgColor;  //按钮背景颜色
+		@fontColor:@SbtnTxtColor;  //按钮字体颜色
+		@borderC:@SbtnBorderColor; //按钮边线颜色
+		@bgHoverColor:@SbtnBgHoverColor;  //按钮背景颜色
+		@fontHoverColor:@SbtnTxtHoverColor;  //按钮字体颜色
+		@borderHoverC:@SbtnBorderHoverColor; //按钮边线颜色
+		@boxShadow:0; //按钮阴影 不需要写0
+		@txtShadow:0;  //字体阴影 不需要写0
+		@linear:0;     //按钮渐变背景 传参时加'',不需要写0
+	
+	}
+	.selector(@selector) when(@selector = hollow ){
+		@bgColor:@HbtnBgColor;  //按钮背景颜色
+		@fontColor:@HbtnTxtColor;  //按钮字体颜色
+		@borderC:@HbtnBorderColor; //按钮边线颜色
+		@bgHoverColor:@HbtnBgHoverColor;  //按钮背景颜色
+		@fontHoverColor:@HbtnTxtHoverColor;  //按钮字体颜色
+		@borderHoverC:@HbtnBorderHoverColor; //按钮边线颜色
+		@boxShadow:0; //按钮阴影 不需要写0
+		@txtShadow:0;  //字体阴影 不需要写0
+		@linear:0;     //按钮渐变背景 传参时加'',不需要写0
+	}
+	.selector(@selector);
+
+
+	.size(@size) when (@size = s){
+		@fontSize:1.3rem;
+		@width:@btnWidth;
+		@height:auto;
+		@padding:0.8rem 0.2rem;
+		@radius:5px;   //按钮圆角
+		@borderW:1px; //按钮边线宽度
+	}
+	.size(@size) when (@size = n){
+		@fontSize:1.5rem;
+		@width:@btnWidth;
+		@height:auto;
+		@padding:0.8rem 0.2rem;
+		@radius:5px;   //按钮圆角
+		@borderW:1px; //按钮边线宽度
+	}
+	.size(@size) when (@size = m){
+		@fontSize:1.6rem;
+		@width:@btnWidth;
+		@height:4rem;
+		@padding:0.8rem;
+		@radius:5px;   //按钮圆角
+		@borderW:1px; //按钮边线宽度
+	}
+	.size(@size) when (@size = l){
+		@fontSize:1.5rem;
+		@width:@btnWidth;
+		@height:auto;
+		@padding:0.8rem 1.2rem;
+		@radius:5px;   //按钮圆角
+		@borderW:1px; //按钮边线宽度
+	}
+
+	.size(@size);
+
+
+    a.btn-@{selector}-@{size},
+    button.btn-@{selector}-@{size},
+    input.btn-@{selector}-@{size}{
+		#text .nospaceitem();
+		line-height:normal;
+	    #form .btn(@width,@height,@padding,@radius,@fontSize,@borderW,@bgColor,@fontColor,@borderC,@bgHoverColor,@fontHoverColor,@borderHoverC);
+	}
+	a.btn-@{selector}-@{size}  ,
+    button.btn-@{selector}-@{size} {
+		vertical-align:top;
+		margin-right:0.5rem;
+    }
+}

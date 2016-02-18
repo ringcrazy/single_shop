@@ -1,0 +1,83 @@
+.adr-bar{
+    #display .box-align(center,center);
+	text-align:center;
+}
+// common
+.d-none{
+	display: none !important;
+}
+
+.g-main{
+	#display .box();
+	#display .orient(vertical);
+}
+.map-box{
+	#display .box();
+	#display .flex(1);
+	#display .orient(vertical);
+}
+.map{
+	#display .flex(1);
+}
+
+// 底部
+footer{
+	height:44px;
+	background-color: #fff;
+	line-height: 44px;
+	.footer-init{
+		text-align: center;
+		span{
+			color:#fd5b37;
+		}
+	}
+	.footer-active{
+		.address-text{
+			width:75%;
+			float: left;
+			text-indent: 20px;
+			white-space: nowrap;
+  			overflow-x: auto;
+			
+		}
+		.btn-confirm{
+			width:25%;
+			float: right;
+			height:44px;
+			color:#fff;
+			background-color: #fd5b37;
+			text-align: center;
+		}
+	}	
+	
+}
+
+// 隐藏百度Logo
+.anchorBL{
+	display: none;
+}
+
+// 定位按钮
+.map-locator-box{
+	position: absolute;
+  z-index: 10;
+  bottom: 70px;
+  right: auto;
+  top: auto;
+  left: 8px;
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.8);
+  .locator{
+  	height:30px;
+  	width: 30px;
+  	#display .box();
+  	#display .box-align(center, center);
+
+  	  -webkit-box-sizing: border-box;
+  }
+  i{
+  	font-size:20px;
+  	color:#1c283e;
+  	font-weight: bold;
+  }
+}

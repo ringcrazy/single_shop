@@ -1,0 +1,171 @@
+.account {
+	position: relative;
+    height: 17rem;
+    background: -webkit-linear-gradient(left top, #ed7e47, #f2904f, #f69852, #f68452, #fb8f67);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(bottom right, #ed7e47, #f2904f, #f69852, #f68452, #fb8f67);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(bottom right, #ed7e47, #f2904f, #f69852, #f68452, #fb8f67);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to bottom right, #ed7e47, #f2904f, #f69852, #f68452, #fb8f67);
+    /* 标准的语法 */
+    color: @baseMainColor;
+    .set {
+        font-size: 1.5rem;
+        padding: 1.16rem 1.25rem 0 0;
+        display: block;
+        text-align: right;
+        color: @baseMainColor;
+        i {
+            transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            /* IE 9 */
+            -moz-transform: rotate(180deg);
+            /* Firefox */
+            -webkit-transform: rotate(180deg);
+            /* Safari 和 Chrome */
+            -o-transform: rotate(180deg);
+            /* Opera */
+            margin-top: -2px;
+        }
+    }
+    .portrait {
+        font-size: 1.5rem;
+        text-align: center;
+        span {
+            display: block;
+            padding-bottom: 0.5rem;
+            position: relative;
+            img {
+                width: 5.4rem;
+                height: 5.4rem;
+                border-radius: 50%;
+                border: 3px solid rgba(255, 255, 255, 0.4);
+            }
+            i {
+                width: 1.5rem;
+                height: 1.5rem;
+                background: @kingBackg;
+                border: 1px solid @baseMainColor;
+                border-radius: 50%;
+                position: absolute;
+                left: 54%;
+                top: 71%;
+            }
+        }
+    }
+    .card {
+    	position: absolute;
+    	width: 100%;
+    	bottom:0;
+    	left: 0;
+        height: 4rem;
+        line-height: 4rem;
+        display: block;
+        background: -webkit-linear-gradient(left, #e38350, #ed834d, #ed6940, #f87b55);
+        /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(right, #e38350, #ed834d, #ed6940, #f87b55);
+        /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(right, #e38350, #ed834d, #ed6940, #f87b55);
+        /* Firefox 3.6 - 15 */
+        background: linear-gradient(to right, #e38350, #ed834d, #ed6940, #f87b55);
+        /* 标准的语法 */
+        color: @baseMainColor;
+        padding-left: 1.45rem;
+        #display .box();
+        #display .box-align(center, center);
+        span {
+            font-size: 1.3rem;
+            #display .flex(3);
+            display: block;
+            i {
+                transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                /* IE 9 */
+                -moz-transform: rotate(180deg);
+                /* Firefox */
+                -webkit-transform: rotate(180deg);
+                /* Safari 和 Chrome */
+                -o-transform: rotate(180deg);
+                /* Opera */
+                margin-top: -2px;
+            }
+        }
+        .case {
+            #display .flex(1);
+            text-align: right;
+            padding-right: 1.25rem;
+        }
+    }
+    .dredge {
+        width: 8.3rem;
+        height: 2.9rem;
+        line-height: 2.9rem;
+        margin: 0.83rem auto 0;
+        display: block;
+        text-align: center;
+        border: 1px solid @baseMainColor;
+        border-radius: 15px;
+        color: @baseMainColor;
+    }
+}
+
+.sum {
+    #display .box();
+    #display .box-align(center, center);
+    height: 5.4rem;
+    #box .line(@borderBaseImg, 2 stretch, @borderBaseColor, 1px 0 1px 0);
+    background: @baseMainColor;
+    div {
+        #display .flex(1);
+        overflow: hidden;
+        width: 50%;
+        padding-left: 2.4rem;
+        i {
+            width: 2.5rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            margin-top: -22px;
+            border-radius: 50%;
+            display: inline-block;
+            background: @iconBackg;
+            color: @baseMainColor;
+            font-size: 1.9rem;
+            text-align: center;
+        }
+        dl {
+            display: inline-block;
+            padding-left: 0.8rem;
+            width: 70%;
+            dt {
+                font-size: 2rem;
+                color: @yueColor;
+                font-weight: bold;
+                overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    word-break: keep-all;
+                span {
+
+                }
+                span.member-balance {
+                    border-bottom: 1px solid @yueColor;
+                }
+                &.blue {
+                    color: @jifenColor;
+                    span.member-point {
+                        border-bottom: 1px solid @jifenColor;
+                    }
+                }
+            }
+            dd {
+                color: @iconDeep;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.ticket a div{
+	font-size: 1.5rem;
+}

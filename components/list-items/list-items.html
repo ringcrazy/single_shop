@@ -1,0 +1,67 @@
+{{if item.tips}}
+<div class="lst-tips">
+    <p>以下餐厅当前时段不送餐</p>
+    <p>您可以预约指定时间送餐</p>
+</div>
+{{/if}}
+<div class="list-items {{if item.close}}closed{{/if}}">
+    <a href="#" class="lst-inner">
+        <div class="lst-img">
+            <img isrc="lst01.jpg" alt="">
+            <span class="label"><img isrc="~/img/closed.png" alt="" /></span>
+        </div>
+        <div class="lst-cont">
+            <h3 class="lst-title">肯德基宅急送（立水桥店）</h3>
+            {{if item.address}}<p>北京市朝阳区百子湾路18号尚8国际广告园2单元北京市朝阳区百子湾路18号尚8国际广告园2单元</p>{{/if}}
+            {{if item.take_out}}<p><span>15元起送</span><span>6元配送费</span></p>{{/if}}
+            {{if item.open_time}}
+            <div class="t-box">
+                <dl class="times">
+                    <dt>营业时间：</dt>
+                    <dd>11:00～14:00</dd>
+                    <dd>17:00～21:00</dd>
+                    <dd>23:00～23:50</dd>
+                </dl>
+                <b>150 m</b>
+            </div>
+            {{/if}}
+            {{if item.times}}
+            <p>约 45 分钟送达<b>150 m</b></p>
+            {{/if}}
+            {{if item.pay}}
+            <div class="t-box pay">
+                <ul class="pay-lst">
+                    <li class="baidu"><span><i class="m-icon i-pay-baidu"></i></span>百付宝</li>
+                    <li class="weixin"><span><i class="m-icon i-pay-weixin"></i></span>微信支付</li>
+                    <li class="card"><span><i class="m-icon i-pay-card"></i></span>银行卡</li>
+                    <li class="taobao"><span><i class="m-icon i-pay-taobao"></i></span>支付宝</li>
+                    <li class="vip"><span><i class="m-icon i-pay-vip"></i></span>VIP卡</li>
+                </ul>
+                <b>150 m</b>
+            </div>
+            {{/if}}
+        </div>
+    </a>
+    {{if item.dis}}
+    <div class="discount {{if item.all}}dis-all{{/if}}">
+        {{if item.dis_pay}}
+        <ul>
+            <li class="dis-items"><i class="m-sign wm">外卖</i><span>满30减9元，满50减16元</span></li>
+            <li class="dis-items"><i class="m-sign zf">支付</i><span>微信、支付宝、百付宝、VIP卡</span></li>
+            <li class="dis-items"><i class="m-sign tm">特卖</i><span>满30减9元，满50减16元</span></li>
+            <li class="dis-items"><i class="m-sign dt">订台</i><span>微信、支付宝、百付宝、VIP卡</span></li>
+            <li class="dis-items"><i class="m-sign dc">点菜</i><span>满30减9元，满50减16元</span></li>
+            <li class="dis-items"><i class="m-sign pd">排队</i><span>微信、支付宝、百付宝、VIP卡</span></li>
+        </ul>
+        {{/if}}
+        {{if item.dis_out}}
+        <ul>
+            <li class="dis-items"><i class="m-icon i-jian"></i><span>满 200 减 100 元</span></li>
+            <li class="dis-items"><i class="m-icon i-zhe"></i><span>满 200 减 100 元</span></li>
+            <li class="dis-items"><i class="m-icon i-song"></i><span>满 200 减 100 元</span></li>
+        </ul>
+        {{/if}}
+        <a href="#" class="up arrow" ><i class="m-icon i-back"></i></a>
+    </div>
+    {{/if}}
+</div>

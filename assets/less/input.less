@@ -1,0 +1,44 @@
+.getinput(@width:100%){
+	@width:100%;
+	@height:4rem;
+	@padding:0 0.4rem 0 0.8rem;
+	@borderColor:@inputBorderColor;
+	@borderW:0 0 1px 0;
+	@bgColor:@inputBgcolor;
+	@fontSize:1.3rem;
+	@shadow:0;
+	@radius:3px;
+	@color:@inputTxtColor;
+	#form .input(@width,@height,@padding,@borderColor,@borderW,@bgColor,@fontSize,@color,@shadow,@radius);
+	.m-ipt{
+	    #box .line(@borderBaseImg,2 stretch,@borderBaseColor,0 0 1px 0);
+	}
+}
+.getsearch(@width:100%){
+	@width:100%;
+	@height:4rem;
+	@padding:0 0.4rem 0 0.8rem;
+	@borderColor:@inputBorderColor;
+	@borderW:0 0 1px 0;
+	@bgColor:@inputBgcolor;
+	@fontSize:1.3rem;
+	@shadow:0;
+	@radius:3px;
+	@color:@inputTxtColor;
+	.search-box{
+	    position: relative;
+	    label{  
+	        position:absolute;
+	        top:50%;          
+	        left:0.7rem;
+	        .transform(translate(0 , -50%));
+	        font-size:1.8rem;
+	        padding-top:0.2rem;
+	        .m-icon{
+		        color:#a7a7a7;
+		        vertical-align:top;
+	        }
+	    }
+		#form .input(@width,@height,@padding,@borderColor,@borderW,@bgColor,@fontSize,@color,@shadow,@radius);
+	}  
+}

@@ -1,0 +1,67 @@
+<module:layout/normal>
+    <def:content>
+    <module:adr-bar />
+    <module:header-koubei />
+    <section class="menu-main">
+        <div class="menu-list">
+            <!-- 菜品类型 -->
+            <div class="menu-nav">
+                <div class="nav-lst">
+
+                </div>
+            </div>
+            <!-- 菜品列表 -->
+            <div class="menu-foods">
+                <div class="menu-lst">
+                    <div class="foods-container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 购物车 -->
+    <section class="menu-ft">
+        <div class="ft-bar">
+            <div class="subtotal" data-role="subtotal">
+                <p>
+                    <span class="mark">￥<em >0</em></span>
+                    <span class="f-tips"></span>
+                     <span class="cue-null">购物篮是空哒~</span>
+                </p>
+               
+            </div>
+            <div class="sub-opc">
+                <button class="m-btn btn-define-n" disabled="true">确认下单</button>
+            </div>
+        </div>
+        <div class="shop-cart">
+            <a href="#" class="cue" data-role="cue">
+                <span><i class="m-icon i-cart"></i><em class="pubr hide">0</em></span>
+            </a>
+            <div class="cart-title">
+                <span class="delet">
+                    <i class="m-icon i-delete"></i>清除
+                </span>
+            </div>
+            <div class="cart-list">
+                <ul>
+                    <li>
+                        <h4>菜名</h4>
+                        <span class="f-price"><b>￥</b>0</span>
+                        <div class="f-numb">
+                            <a class="m-icon i-minus"></a>
+                            <em>0</em>
+                            <a class="m-icon i-plus"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    </def>
+    <def:pagejs>
+        <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&amp;ak=286c3ec71cae58cacfa75d49145ff545"></script>
+    </def>
+    </module>
