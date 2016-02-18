@@ -28,7 +28,7 @@ module.exports = {
         // cdn: 'http://10.8.8.43:81/single_shop',
         // 开发
          // cdn:'http://172.18.11.112:3404/single_shop',
-         cdn:'http://172.18.111.65:3404/single_shop',
+         cdn:'http://172.18.11.43:3401/single_shop',
         // 静态资源版本号
         ver: function() {
             return Date.now;
