@@ -22,20 +22,24 @@
         <meta name="browsermode" content="application">
         <!-- uc强制竖屏 -->
         <meta name="screen-orientation" content="portrait">
-       
         <link rel="stylesheet" href="{{$g.cdn}}/css/{{theme?(theme+'/'):($g.theme?($g.theme+'/'):'')}}p/{{pageName}}.css?v={{$g.ver}}">
+        <link rel="stylesheet" href="{{$g.cdn}}/less/swiper.css">
         
     </head>
     <body>
         <div class="g-wrap">
             <div class="g-views">
+                <module:header />
                 <div class="g-main">
                 <point:content />
                 </div>
             </div>
         </div>
-    <script src="{{$g.cdn}}/js/mo.1.0.0.js?v={{$g.ver}}"></script>
+   <!--  <script src="{{$g.cdn}}/js/mo.1.0.0.js?v={{$g.ver}}"></script> -->
+   <script src="{{$g.cdn}}/js/mo.1.0.0.js"></script>
     <point:pagejs />
-    <script src="{{$g.cdn}}/js/p/{{pageName}}.js?v={{$g.ver}}"></script>
+   <!--  <script src="{{$g.cdn}}/js/p/{{pageName}}.js?v={{$g.ver}}"></script> -->
+   <script src="{{$g.cdn}}/js/p/{{pageName}}.js"></script>
+
     </body>
 </html>

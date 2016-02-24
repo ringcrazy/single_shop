@@ -1,42 +1,39 @@
+
+
+
+
+/* 底部导航栏 颜色 */
+
+@navBorderColor: #c8c8c8;
+@navBackgroundColor: #f4f4f4;
+@navClassBorderColor: #323232;
+@navClassAhover: #d0503b;
+@navClassAColor:#747474;
+
+
+
+/* 底部导航栏 样式 */
+
 nav.nav {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -o-box;
-    display: box;
-    height: 55px;
+    #display .box();
+    height: 5.5rem;
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
-    font-size: 10px;
-    border-top: 1px solid #323232;
-    background: #323232;
+    font-size: 1.0rem;
+    border-top: 0.1rem solid @navClassBorderColor;
+    background: @navClassBorderColor;
     z-index: 2
 }
 
 nav.nav a {
-    color: #747474;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -o-box;
-    display: box;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -o-box-flex: 1;
-    box-flex: 1;
-    flex: 1;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -o-box-pack: center;
-    box-pack: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -o-box-align: center;
-    box-align: center;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -o-box-orient: vertical;
-    box-orient: vertical
+    color: @navClassAColor;
+    #display .box();
+    #display .flex(1);
+    #display .box-align(center, center);
+    #display .orient(vertical);
+
 }
 
 nav.nav a i {
@@ -47,7 +44,7 @@ nav.nav a i {
 }
 
 nav.nav a.on {
-    color: #d0503b;
+    color:@navClassAhover;
 }
 
 i.home-page, i.order, i.user{
